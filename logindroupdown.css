@@ -1,0 +1,649 @@
+
+    /* =========================================================
+       GLOBAL
+    ========================================================== */
+
+    :root {
+      --primary: #0b5ed7;
+      --primary-dark: #073b8f;
+      --secondary: #123c78;
+      --dark: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --light: #f5f8fc;
+      --border: #e2e8f0;
+      --white: #ffffff;
+      --success: #198754;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--light);
+      color: var(--text);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+   
+
+    /* =========================================================
+       LOGIN BUTTON
+    ========================================================== */
+
+    .login-button {
+      border: 0;
+      border-radius: 9px;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 12px 19px;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all .25s ease;
+    }
+
+    .login-button:hover {
+      background: var(--primary-dark);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 7px 18px rgba(11, 94, 215, .25);
+    }
+
+
+    /* =========================================================
+       LOGIN DROPDOWN
+    ========================================================== */
+
+    .login-dropdown-menu {
+      width: 200px;
+      padding: 5px;
+      border: 0;
+      border-radius: 14px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, .18);
+      margin-top: 10px !important;
+    }
+
+    .login-menu-heading {
+      padding: 12px 13px;
+    }
+
+    .login-menu-heading h6 {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .login-menu-heading p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .login-dropdown-menu .dropdown-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 11px;
+      margin: 2px 0;
+      border-radius: 9px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 600;
+      transition: all .2s ease;
+    }
+
+    .login-dropdown-menu .dropdown-item:hover {
+      background: #eef5ff;
+      color: var(--primary);
+      transform: translateX(3px);
+    }
+
+    .role-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f1f5f9;
+      color: var(--primary);
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+
+    .login-dropdown-menu .dropdown-item:hover .role-icon {
+      background: #ffffff;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================== */
+
+    .navigation {
+      background: var(--secondary);
+    }
+
+    .navigation .navbar {
+      min-height: 48px;
+    }
+
+    .navigation .nav-link {
+      color: #e2e8f0 !important;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 13px 16px !important;
+      transition: .2s;
+    }
+
+    .navigation .nav-link:hover,
+    .navigation .nav-link.active {
+      background: rgba(255,255,255,.12);
+      color: #ffffff !important;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================== */
+
+    .hero {
+      min-height: 560px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          115deg,
+          rgba(7, 59, 143, .97),
+          rgba(11, 94, 215, .90)
+        );
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 550px;
+      height: 550px;
+      border: 90px solid rgba(255,255,255,.05);
+      border-radius: 50%;
+      right: -190px;
+      top: -220px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border: 65px solid rgba(255,255,255,.04);
+      border-radius: 50%;
+      left: -180px;
+      bottom: -220px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #ffffff;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.20);
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.12;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #bfdbfe;
+    }
+
+    .hero-description {
+      max-width: 760px;
+      color: #e0ecff;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn-primary-custom {
+      background: #ffffff;
+      color: var(--primary-dark);
+      border: 0;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn-primary-custom:hover {
+      background: #eaf2ff;
+      color: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-custom {
+      border: 1px solid rgba(255,255,255,.65);
+      color: #ffffff;
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s;
+    }
+
+    .btn-outline-custom:hover {
+      background: #ffffff;
+      color: var(--primary-dark);
+    }
+
+
+    /* =========================================================
+       HERO INFO CARD
+    ========================================================== */
+
+    .hero-card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,.11);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 18px;
+      padding: 28px;
+      color: #ffffff;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 12px;
+      background: rgba(255,255,255,.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .hero-card h4 {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .hero-card p {
+      color: #dbeafe;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       QUICK SERVICES
+    ========================================================== */
+
+    .services {
+      padding: 75px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading .small-title {
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .section-heading h2 {
+      color: var(--secondary);
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      margin: 8px 0 10px;
+    }
+
+    .section-heading p {
+      max-width: 650px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .service-card {
+      height: 100%;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 28px;
+      box-shadow: 0 5px 22px rgba(15,23,42,.05);
+      transition: all .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 16px 35px rgba(15,23,42,.11);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eaf2ff;
+      color: var(--primary);
+      border-radius: 12px;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .service-card h4 {
+      color: var(--secondary);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+
+    /* =========================================================
+       ABOUT
+    ========================================================== */
+
+    .about {
+      padding: 75px 0;
+      background: #ffffff;
+    }
+
+    .about-content h2 {
+      color: var(--secondary);
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .about-feature {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    .about-feature i {
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      background: #eaf2ff;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-panel {
+      background: #f5f8fc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .about-panel-title {
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .stat-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .stat-box strong {
+      display: block;
+      color: var(--primary);
+      font-size: 25px;
+      font-weight: 800;
+    }
+
+    .stat-box span {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================== */
+
+    footer {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 45px 0 20px;
+    }
+
+    .footer-title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+    }
+
+    .footer-description {
+      color: #94a3b8;
+      font-size: 12px;
+      line-height: 1.8;
+      max-width: 500px;
+    }
+
+    .footer-heading {
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      font-size: 12px;
+      transition: .2s;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.10);
+      margin-top: 35px;
+      padding-top: 18px;
+      color: #64748b;
+      font-size: 11px;
+      text-align: center;
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================== */
+
+    @media (max-width: 991px) {
+
+      .header-wrapper {
+        min-height: 82px;
+      }
+
+      .brand-title {
+        font-size: 16px;
+      }
+
+      .responsible-box {
+        display: none;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+
+      .hero-card {
+        margin-top: 35px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .top-bar {
+        display: none;
+      }
+
+      .header-wrapper {
+        min-height: 72px;
+        gap: 10px;
+      }
+
+      .institute-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 8px;
+      }
+
+      .brand-title {
+        font-size: 13px;
+        line-height: 1.2;
+      }
+
+      .brand-subtitle {
+        display: none;
+      }
+
+      .login-button {
+        padding: 10px 13px;
+      }
+
+      .navigation .navbar {
+        min-height: auto;
+      }
+
+      .navigation .nav-link {
+        padding: 10px 12px !important;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 75px 0;
+      }
+
+      .hero-description {
+        margin: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-card {
+        text-align: left;
+      }
+
+      .services,
+      .about {
+        padding: 55px 0;
+      }
+
+      .footer-column {
+        margin-top: 25px;
+      }
+    }
+
+
+    @media (max-width: 430px) {
+
+      .brand-title {
+        font-size: 11px;
+      }
+
+      .login-button span {
+        display: none;
+      }
+
+      .login-button {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .login-dropdown-menu {
+        width: 260px;
+      }
+
+    }

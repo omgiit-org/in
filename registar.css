@@ -1,0 +1,169 @@
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+/* Blue header - center alignment */
+.header {
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0A192F 0%, #1E293B 55%, #EA580C 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    margin: 0 auto 25px;
+}
+
+.header h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+.header h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.header p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+/* Form centered on page */
+#enquiryForm {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Labels */
+#enquiryForm label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 18px 0 8px;
+}
+
+/* Input fields */
+#enquiryForm input,
+#enquiryForm select,
+#enquiryForm textarea {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 17px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #fffdfd;
+    color: #172033;
+}
+
+/* Textarea */
+#enquiryForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Required star */
+.required {
+    color: #dc2626;
+}
+
+/* Submit button */
+.submit-btn {
+    display: block;
+    width: auto;
+    margin: 25px auto;
+    padding: 15px;
+    border: 2px solid orange;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #0A192F 0%, #1E293B 55%, #EA580C 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    border: 2px solid green;
+    background: linear-gradient(135deg, #ff6b00 0%, #ea580c 100%);
+}
+
+/* Note */
+.note {
+    text-align: center;
+    line-height: 1.7;
+    padding: 15px;
+    background: #eef5ff;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .header h2 {
+        font-size: 25px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    #enquiryForm label,
+    #enquiryForm input,
+    #enquiryForm select,
+    #enquiryForm textarea {
+        font-size: 16px;
+    }
+}
+
+/* Document upload fields */
+#enquiryForm input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid orange;
+   
+    border-radius: 8px;
+    background: #f5f8fc;
+    color: #172033;
+    font-size: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#enquiryForm input[type="file"]:focus {
+    outline: 2px solid #0b4da2;
+    outline-offset: 2px;
+}
+
+.upload-note {
+    padding: 12px;
+    background: #eef5ff;
+    border-left: 4px solid #0b4da2;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 1.6;
+}
