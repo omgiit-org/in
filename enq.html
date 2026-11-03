@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMGIIT Student Enquiry Form</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      color: #172033;
+      font-size: 17px;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 20px auto;
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 22px rgba(0, 0, 0, 0.10);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .header h1 {
+      color: #123c7a;
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: #526176;
+      line-height: 1.6;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 18px 0 8px;
+    }
+
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #9aa9bc;
+      border-radius: 7px;
+      font-size: 17px;
+      font-family: inherit;
+      background: #fff;
+      color: #172033;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: 3px solid #b8d7ff;
+      border-color: #125ac0;
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .required {
+      color: #c62828;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 25px;
+      padding: 16px;
+      background: #168b46;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #106c35;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 13px;
+      background: #edf5ff;
+      border-radius: 7px;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 25px;
+      color: #526176;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 20px 16px;
+        margin: 8px auto;
+      }
+
+      .header h1 {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="header">
+      <h1>OMGIIT</h1>
+      <h2>Student Enquiry Form</h2>
+      <p>
+        OMM GANAPATI INSTITUTE OF INFORMATION &amp; TECHNOLOGY<br>
+        Boudh, Odisha – 762014
+      </p>
+      <p>Fill in your details to enquire about our courses.</p>
+    </header>
+
+    <form id="enquiryForm">
+
+      <label for="studentName">
+        Student Name <span class="required">*</span>
+      </label>
+      <input
+        type="text"
+        id="studentName"
+        name="studentName"
+        placeholder="Enter your full name"
+        autocomplete="name"
+        required
+      >
+
+      <label for="course">
+        Select Course <span class="required">*</span>
+      </label>
+      <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option>OS-CIT (3 Months)</option>
+        <option>OS-CIT A (6 Months)</option>
+        <option>OS-CIT A+ (12 Months)</option>
+        <option>ACC</option>
+        <option>BCC</option>
+        <option>CCC</option>
+        <option>CCC+</option>
+        <option>ECC</option>
+        <option>O Level</option>
+        <option>A Level</option>
+        <option>AI - Artificial Intelligence</option>
+        <option>Web Development</option>
+        <option>Programming Course</option>
+        <option>Other Course</option>
+      </select>
+
+      <label for="contact">
+        Contact Number <span class="required">*</span>
+      </label>
+      <input
+        type="tel"
+        id="contact"
+        name="contact"
+        placeholder="Enter 10-digit mobile number"
+        inputmode="numeric"
+        pattern="[6-9][0-9]{9}"
+        maxlength="10"
+        autocomplete="tel"
+        title="Enter a valid 10-digit Indian mobile number"
+        required
+      >
+
+      <label for="dob">
+        Date of Birth <span class="required">*</span>
+      </label>
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        required
+      >
+
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        autocomplete="email"
+      >
+
+      <label for="description">
+        Enquiry Description <span class="required">*</span>
+      </label>
+      <textarea
+        id="description"
+        name="description"
+        placeholder="Write your questions about course fees, admission, duration, etc."
+        required
+      ></textarea>
+
+      <button type="submit" class="submit-btn">
+        Send Enquiry on WhatsApp
+      </button>
+
+      <div class="note">
+        <strong>Important:</strong> After clicking the button, WhatsApp
+        will open with your enquiry details. Review the message and press
+        Send to submit your enquiry to OMGIIT.
+      </div>
+
+    </form>
+
+    <footer>
+      © 2026 OMGIIT | Learn Today. Grow Tomorrow.
+    </footer>
+
+  </main>
+
+  <script>
+    const form = document.getElementById("enquiryForm");
+
+    // OMGIIT WhatsApp number with India country code
+    const whatsappNumber = "916371320268";
+
+    // Prevent future dates of birth
+    const dobInput = document.getElementById("dob");
+    const today = new Date();
+    const localToday = [
+      today.getFullYear(),
+      String(today.getMonth() + 1).padStart(2, "0"),
+      String(today.getDate()).padStart(2, "0")
+    ].join("-");
+
+    dobInput.max = localToday;
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!form.reportValidity()) {
+        return;
+      }
+
+      const studentName =
+        document.getElementById("studentName").value.trim();
+
+      const course =
+        document.getElementById("course").value;
+
+      const contact =
+        document.getElementById("contact").value.trim();
+
+      const dob =
+        document.getElementById("dob").value;
+
+      const email =
+        document.getElementById("email").value.trim() || "Not provided";
+
+      const description =
+        document.getElementById("description").value.trim();
+
+      if (!studentName || !course || !contact || !dob || !description) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      const message =
+`*NEW STUDENT ENQUIRY - OMGIIT*
+
+Student Name: ${studentName}
+Course: ${course}
+Contact Number: ${contact}
+Date of Birth: ${dob}
+Email: ${email}
+
+Enquiry Description:
+${description}
+
+Institute: OMM Ganapati Institute of Information & Technology
+Location: Boudh, Odisha - 762014`;
+
+      const whatsappURL =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(message);
+
+      window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>

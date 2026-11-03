@@ -1,0 +1,37 @@
+/* Login Dropdown */
+
+.nav-register {
+  background: #f4b400;
+  color: #111 !important;
+  padding: 9px 18px !important;
+  border-radius: 50px;
+  font-weight: 700 !important;
+}
+
+.nav-register:hover {
+  background: #ffc107;
+  color: #111 !important;
+}
+
+.dropdown-menu {
+  min-width: 230px;
+  border: none;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.dropdown-item {
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #26364a;
+}
+
+.dropdown-item i {
+  color: #0b3d91;
+}
+
+.dropdown-item:hover {
+  background: #eef4ff;
+  color: #0b3d91;
+}
