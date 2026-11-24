@@ -1,0 +1,4943 @@
+
+  /* ==========================================
+   OMGIIT WEBSITE - GLOBAL CSS
+========================================== */
+    :root {
+      --accent: #f4b400;
+      --dark: #071a33;
+      --light: #f5f8fc;
+      --text: #526071;
+      --primary: #FF5C28;
+      --primary-light: #FF7A45;
+      --secondary: #FF9A3C;
+      --text-dark: #1A0A00;
+      --text-gray: #8A4A2A;
+      --bg-gradient-start: #FFF7F4;
+      --bg-gradient-end: #FFF0EA;
+      --success: #28a745;
+      --error: #dc3545;
+      --white: #ffffff;
+    --primary: #003366;
+    --navy: #071a35;
+    --secondary: #123c70;
+    --accent: #ffb703;
+    --orange: #ff9800;
+    --white: #ffffff;
+    --light: #edf5ff;
+    --text: #17365d;
+    --shadow: 0 8px 25px rgba(0,0,0,0.18);
+    }
+
+/* GLOBAL BOX SIZING */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+  
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8ef;
+    color: #333;
+    overflow-x: hidden;
+}
+
+    
+/* Animetion */
+#network {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* Animetion */
+
+/* ==========================================
+   CONTENT SECTION
+========================================== */
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #e87518;
+    font-size: clamp(28px, 5vw, 52px);
+    text-shadow: 0 2px 12px #ffd4a5;
+}
+
+.content h2 {
+    color: #f18a32;
+    margin-top: 15px;
+}
+
+.content p {
+    color: #66513e;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   GOVERNMENT TOP BAR
+========================================== */
+
+.gov-top-bar-container {
+    background: #040e1c;
+    width: 100%;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 24px;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 14px;
+}
+
+.gov-top-bar-container p {
+    margin: 0;
+}
+
+/* ==========================================
+   MAIN NAVBAR
+========================================== */
+
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+
+    background: linear-gradient(
+        135deg,
+        #071a35,
+        #123c70,
+        #071a35
+    ) !important;
+
+    padding: 10px 0;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,0.20);
+
+    transition: background 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.navbar > .container {
+    display: flex;
+    align-items: center;
+}
+
+/* ==========================================
+   INSTITUTE BRAND AND LOGO
+========================================== */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+
+    color: var(--white) !important;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* LOGO - NO BACKGROUND / NO BORDER */
+
+.navbar-brand img,
+.institute-logo,
+.institute0-logo {
+
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+    display: block;
+
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    transition: transform 0.4s ease;
+}
+
+/* LOGO ANIMATION */
+
+.navbar-brand:hover img {
+    transform: scale(1.10) rotate(-4deg);
+}
+
+.navbar-brand:hover {
+    color: var(--accent) !important;
+    transform: translateY(-2px);
+}
+
+/* BRAND TEXT */
+
+.navbar-brand span {
+    color: var(--accent);
+}
+
+/* ==========================================
+   NAVIGATION MENU
+========================================== */
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navbar .nav-link {
+    position: relative;
+
+    color: var(--white) !important;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    padding: 12px 13px !important;
+
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* UNDERLINE ANIMATION */
+
+.navbar .nav-link::before {
+    content: "";
+
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--accent);
+    border-radius: 5px;
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::before,
+.navbar .nav-link.active::before {
+    width: 65%;
+}
+
+/* MENU HOVER */
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--accent) !important;
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-2px);
+}
+
+/* DROPDOWN ARROW */
+
+.navbar .dropdown-toggle::after {
+    margin-left: 7px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.navbar .dropdown.show > .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* ==========================================
+   MAIN DROPDOWN MENU
+========================================== */
+
+.navbar .dropdown-menu {
+    display: block;
+
+    min-width: 245px;
+    padding: 8px 0;
+    margin-top: 8px;
+
+    background: var(--white);
+
+    border: none;
+    border-radius: 9px;
+
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(12px);
+
+    transition: opacity 0.25s ease,
+                transform 0.25s ease,
+                visibility 0.25s ease;
+}
+
+/* DROPDOWN OPEN */
+
+.navbar .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* DROPDOWN ITEMS */
+
+.navbar .dropdown-item {
+    position: relative;
+
+    display: block;
+
+    color: var(--text);
+
+    font-size: 13.5px;
+    font-weight: 600;
+
+    padding: 11px 18px 11px 22px;
+
+    transition: all 0.25s ease;
+}
+
+/* LEFT BORDER ANIMATION */
+
+.navbar .dropdown-item::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background: var(--orange);
+
+    transform: scaleY(0);
+    transition: transform 0.25s ease;
+}
+
+/* ITEM HOVER */
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    color: #0755a5;
+    background: var(--light);
+    padding-left: 29px;
+}
+
+.navbar .dropdown-item:hover::before,
+.navbar .dropdown-item:focus::before {
+    transform: scaleY(1);
+}
+
+/* ==========================================
+   OSOU SUBMENU
+========================================== */
+
+.submenu-parent {
+    position: relative;
+}
+
+/* SUBMENU BOX */
+
+.submenu-parent > .dropdown-menu {
+    position: absolute;
+
+    top: 0;
+    left: 100%;
+
+    margin: 0 0 0 5px;
+
+    min-width: 220px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateX(12px);
+}
+
+/* DESKTOP SUBMENU HOVER */
+
+@media (min-width: 992px) {
+
+    .submenu-parent:hover > .dropdown-menu,
+    .submenu-parent:focus-within > .dropdown-menu,
+    .submenu-parent > .dropdown-menu.show {
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        transform: translateX(0);
+    }
+}
+
+/* SUBMENU ARROW */
+
+.submenu-parent > .dropdown-toggle::after {
+    float: right;
+    margin-top: 7px;
+    transform: rotate(-90deg);
+}
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-button {
+
+    background: linear-gradient(
+        135deg,
+        #ffca28,
+        #ff9800
+    ) !important;
+
+    color: #10294a !important;
+
+    border: none !important;
+    outline: none !important;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 3px 12px rgba(255,152,0,0.30);
+
+    transition: all 0.35s ease;
+}
+
+/* LOGIN HOVER */
+
+.login-button:hover,
+.login-button:focus {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #ffca28
+    ) !important;
+
+    color: #071a35 !important;
+
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow: 0 7px 18px rgba(255,193,7,0.40);
+}
+
+/* LOGIN DROPDOWN */
+
+.login-dropdown-menu {
+    min-width: 250px !important;
+    right: 0;
+    left: auto;
+
+    border-top: 3px solid var(--accent) !important;
+    border-radius: 10px !important;
+
+    padding: 10px 0 !important;
+}
+
+/* LOGIN HEADING */
+
+.login-menu-heading {
+    padding: 9px 16px;
+    color: var(--secondary);
+}
+
+.login-menu-heading h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* LOGIN ICON */
+
+.role-icon {
+    display: inline-flex;
+
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2ff;
+    color: #1455a0;
+
+    border-radius: 6px;
+    margin-right: 9px;
+
+    transition: all 0.25s ease;
+}
+
+.login-dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+}
+
+.login-dropdown-menu .dropdown-item:hover .role-icon {
+    background: var(--secondary);
+    color: white;
+}
+
+/* LOGIN DIVIDER */
+
+.login-dropdown-menu .dropdown-divider {
+    margin: 5px 12px;
+}
+
+/* ==========================================
+   NAVBAR TOGGLER
+========================================== */
+
+.navbar-toggler {
+    padding: 8px 10px;
+
+    border: 1px solid rgba(255,255,255,0.65) !important;
+    border-radius: 7px;
+
+    outline: none !important;
+    box-shadow: none !important;
+
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background: rgba(255,193,7,0.15);
+    border-color: var(--accent) !important;
+}
+
+/* CUSTOM HAMBURGER ICON */
+
+.navbar-toggler-icon {
+
+    background-image: none !important;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: 24px;
+    height: 20px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 9px,
+        white 9px,
+        white 11px,
+        transparent 11px
+    ) !important;
+
+    transition: all 0.3s ease;
+}
+
+/* TOP AND BOTTOM LINES */
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 24px;
+    height: 2px;
+
+    background: white;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+    top: 3px;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 3px;
+}
+
+/* HAMBURGER TO X */
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: transparent !important;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    bottom: 9px;
+    transform: rotate(-45deg);
+}
+
+/* ==========================================
+   TABLET AND MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 991.98px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 8px 12px;
+    }
+
+    .navbar > .container {
+        flex-wrap: wrap;
+    }
+
+    /* BRAND */
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+
+    .navbar-brand img,
+    .institute-logo,
+    .institute0-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    /* COLLAPSE MENU */
+
+    .navbar .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+
+        background: #0b2547;
+
+        margin-top: 12px;
+        padding: 12px;
+
+        border-radius: 10px;
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+
+        max-height: 75vh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    /* MENU ITEMS */
+
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch !important;
+        width: 100%;
+        gap: 3px;
+    }
+
+    .navbar .nav-link {
+        width: 100%;
+        padding: 11px 14px !important;
+    }
+
+    .navbar .nav-link::before {
+        display: none;
+    }
+
+    .navbar .nav-link:hover {
+        padding-left: 20px !important;
+        background: rgba(255,255,255,0.10);
+    }
+
+    /* MOBILE DROPDOWN */
+
+    .navbar .dropdown-menu {
+        display: none;
+
+        position: static !important;
+
+        width: 100%;
+        min-width: 0;
+
+        margin: 3px 0 8px;
+        padding: 5px 0;
+
+        background: #ffffff;
+
+        border-radius: 7px;
+
+        box-shadow: none;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        transform: none !important;
+
+        transition: none;
+    }
+
+    /* OPEN MOBILE DROPDOWN */
+
+    .navbar .dropdown-menu.show {
+        display: block;
+    }
+
+    /* MOBILE SUBMENU */
+
+    .submenu-parent > .dropdown-menu {
+        position: static !important;
+
+        display: none;
+
+        width: auto;
+        min-width: 0;
+
+        margin: 3px 10px 8px 15px;
+
+        background: #f1f5fb;
+
+        border-left: 3px solid var(--accent);
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        transform: none !important;
+    }
+
+    .submenu-parent > .dropdown-menu.show {
+        display: block;
+    }
+
+    /* MOBILE SUBMENU ARROW */
+
+    .submenu-parent > .dropdown-toggle::after {
+        transform: rotate(0deg);
+    }
+
+    /* LOGIN BUTTON */
+
+    .navbar .dropdown:has(> .login-button) {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .login-button {
+        width: 100%;
+        padding: 11px;
+    }
+
+    /* LOGIN DROPDOWN */
+
+    .login-dropdown-menu {
+        position: static !important;
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* MOBILE TOP BAR */
+
+    .gov-top-bar-container {
+        justify-content: center;
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 7px 8px;
+    }
+
+    .navbar-brand {
+        font-size: 18px;
+        gap: 6px;
+    }
+
+    .navbar-brand img,
+    .institute-logo,
+    .institute0-logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .navbar-toggler {
+        padding: 6px 8px;
+    }
+
+    .navbar .navbar-collapse {
+        padding: 10px;
+        max-height: 70vh;
+    }
+
+    .navbar .nav-link {
+        font-size: 13px;
+    }
+
+    .navbar .dropdown-item {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    .gov-top-bar-container {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+    outline: 3px solid #ffca28 !important;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+ /* ================= NAVBAR END ================= */
+
+ /* Text Type */
+ .typing-text {
+    color: #0d6efd;
+    font-weight: 700;
+    border-right: 3px solid #0d6efd;
+    padding-right: 5px;
+    animation: cursorBlink 0.7s infinite;
+}
+
+@keyframes cursorBlink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* 7 collor text in */
+
+
+.certificate-heading {
+    text-align: center;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.typing-rainbow {
+    display: inline-block;
+    font-size: 38px;
+    font-weight: 800;
+
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+
+    background-size: 400% 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation:
+        rainbowColor 5s linear infinite,
+        slideUp 1s ease-out forwards;
+}
+
+@keyframes rainbowColor {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==========================================
+   OMGIIT PROFESSIONAL EDUCATION FOOTER
+========================================== */
+
+footer {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #06172e,
+        #0b2c52,
+        #071a35
+    );
+
+    color: #ffffff;
+    padding: 65px 0 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOP GOLDEN BORDER */
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #ff9800,
+        #ffca28,
+        #ffffff,
+        #ffca28,
+        #ff9800
+    );
+
+    background-size: 200% 100%;
+    animation: footerGold 5s linear infinite;
+}
+
+@keyframes footerGold {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+/* FOOTER BRAND */
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #ffffff;
+
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s ease;
+}
+
+/* FOOTER LOGO */
+
+.footer-brand img,
+.footer-brand .institute0-logo {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+    border-radius: 0 !important;
+    padding: 0 !important;
+
+    transition: transform 0.4s ease;
+}
+
+.footer-brand:hover img {
+    transform: scale(1.10) rotate(-5deg);
+}
+
+/* BRAND TEXT */
+
+.footer-brand span {
+    color: #ffc107;
+}
+
+/* FOOTER PARAGRAPH */
+
+footer p {
+    color: #cbd6e5;
+    font-size: 14px;
+    line-height: 1.9;
+
+    margin-bottom: 13px;
+}
+
+/* ==========================================
+   FOOTER HEADINGS
+========================================== */
+
+footer h5 {
+    position: relative;
+
+    color: #ffc107;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    margin-bottom: 27px;
+    padding-bottom: 12px;
+
+    letter-spacing: 0.5px;
+}
+
+/* HEADING UNDERLINE */
+
+footer h5::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 45px;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        #ff9800,
+        #ffca28
+    );
+
+    border-radius: 5px;
+
+    transition: width 0.3s ease;
+}
+
+footer h5:hover::after {
+    width: 80px;
+}
+
+/* ==========================================
+   QUICK LINKS AND GUIDELINES
+========================================== */
+
+footer .col-lg-2 > a {
+    position: relative;
+
+    display: block;
+
+    color: #cbd6e5;
+    text-decoration: none;
+
+    font-size: 13.5px;
+    font-weight: 500;
+
+    margin-bottom: 13px;
+    padding-left: 17px;
+
+    transition: all 0.3s ease;
+}
+
+/* LINK ARROW */
+
+footer .col-lg-2 > a::before {
+    content: "\f285";
+
+    font-family: "bootstrap-icons";
+
+    position: absolute;
+    left: 0;
+    top: 2px;
+
+    color: #ffb703;
+    font-size: 11px;
+
+    transition: transform 0.3s ease;
+}
+
+/* LINK HOVER */
+
+footer .col-lg-2 > a:hover {
+    color: #ffc107;
+    padding-left: 24px;
+}
+
+footer .col-lg-2 > a:hover::before {
+    transform: translateX(4px);
+}
+
+/* ==========================================
+   SOCIAL MEDIA ICONS
+========================================== */
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    background: rgba(255,255,255,0.09);
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: all 0.35s ease;
+}
+
+/* SOCIAL HOVER */
+
+.social-links a:hover {
+    background: #ffc107;
+
+    color: #071a35;
+
+    border-color: #ffc107;
+
+    transform: translateY(-6px) rotate(8deg);
+
+    box-shadow: 0 6px 15px rgba(255,193,7,0.30);
+}
+
+/* ==========================================
+   CONTACT INFORMATION
+========================================== */
+
+footer .col-lg-3 p {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    color: #cbd6e5;
+
+    font-size: 13.5px;
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    transition: all 0.3s ease;
+}
+
+/* CONTACT ICON */
+
+footer .col-lg-3 p i {
+    color: #ffc107 !important;
+
+    font-size: 17px;
+
+    min-width: 18px;
+
+    margin-top: 2px;
+}
+
+/* CONTACT HOVER */
+
+footer .col-lg-3 p:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+/* ==========================================
+   COPYRIGHT SECTION
+========================================== */
+
+.copyright {
+    position: relative;
+
+    margin-top: 45px;
+    padding: 22px 10px;
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    color: #cbd6e5;
+
+    font-size: 12.5px;
+    line-height: 2;
+
+    text-align: center;
+}
+
+/* COPYRIGHT HIGHLIGHT */
+
+.copyright span {
+    color: #ffc107;
+    font-weight: 700;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE
+========================================== */
+
+@media (max-width: 991.98px) {
+
+    footer {
+        padding-top: 50px;
+    }
+
+    footer .row {
+        row-gap: 35px !important;
+    }
+
+    .footer-brand {
+        font-size: 24px;
+    }
+
+    footer h5 {
+        margin-bottom: 20px;
+    }
+
+    .copyright {
+        margin-top: 30px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media (max-width: 767.98px) {
+
+    footer {
+        padding-top: 40px;
+    }
+
+    footer .container {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .footer-brand {
+        font-size: 23px;
+    }
+
+    .footer-brand img {
+        width: 55px;
+        height: 55px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer h5 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    footer .col-lg-2 > a {
+        font-size: 13px;
+        margin-bottom: 11px;
+    }
+
+    .social-links {
+        gap: 9px;
+    }
+
+    .social-links a {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .copyright {
+        padding: 18px 5px;
+        font-size: 11.5px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 400px) {
+
+    footer .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-brand {
+        font-size: 20px;
+    }
+
+    .footer-brand img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 10.5px;
+    }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+footer a:focus-visible {
+    outline: 3px solid #ffc107;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    footer *,
+    footer *::before,
+    footer *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* FOOTER END */
+
+
+
+ /* ================= SCROLL NOTICE BAR ================= */
+
+.notice-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: #f1f5f9;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Latest Notice Left Side */
+.notice-label {
+    background: orangered;
+    color: white;
+    height: 100%;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+/* Green Blinking Dot */
+.blink-dot {
+    width: 15px;
+    height: 15px;
+    background: #39ff14;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 8px #39ff14;
+    }
+    50% {
+        opacity: 0.2;
+        box-shadow: none;
+    }
+}
+
+/* Scrolling Area */
+.notice-text {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Moving Text */
+.notice-text i {
+    display: inline-block;
+    padding-left: 100%;
+    font-size: 24px;
+    font-style: normal;
+    color: #172554;
+    font-weight: 700;
+    animation: scroll-notice 25s linear infinite;
+}
+
+.notice-text:hover i {
+    animation-play-state: paused;
+}
+
+.notice-text b {
+    color: #0b7a36;
+}
+
+.notice-text img {
+    width: 35px;
+    vertical-align: middle;
+}
+
+@keyframes scroll-notice {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    .notice-bar {
+        height: 40px;
+    }
+
+    .notice-label {
+        padding: 0 9px;
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .blink-dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .notice-text i {
+        font-size: 14px;
+        animation-duration: 20s;
+    }
+}
+/* ================= SCROLL NOTICE BAR END ================= */
+
+/* ================= POPUP NOTICE BAR ================= */
+
+/* Overlay */
+.notice-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 15px;
+}
+
+/* Popup Box */
+.notice-popup {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  animation: popupShow 0.4s ease;
+}
+
+/* Close Icon */
+.notice-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #e60023;
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image */
+.notice-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Text */
+.notice-content {
+  padding: 20px 5px 5px;
+  text-align: center;
+  color: #222;
+}
+
+.notice-content h2 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.notice-content p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.notice-content h3 {
+  color: #e60023;
+}
+
+/* Animation */
+@keyframes popupShow {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .notice-popup {
+    padding: 12px;
+    max-width: 100%;
+  }
+
+  .notice-content p {
+    font-size: 14px;
+  }
+}
+
+/* ================= POPUP NOTICE BAR END ================= */
+
+
+/* =====================================
+   OMGIIT HERO SECTION
+===================================== */
+
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 45px;
+    width: 100%;
+    min-height: 690px;
+    padding: 65px 7%;
+    overflow: hidden;
+    background:transparent;
+    background-size: 35px 35px, 45px 45px, cover;
+}
+
+/* Decorative Background */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -150px;
+    left: -100px;
+    border: 2px dashed rgba(36, 139, 230, 0.25);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    right: -100px;
+    bottom: -100px;
+    border: 2px dashed rgba(36, 139, 230, 0.25);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* LEFT CONTENT */
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+/* HERO BADGE */
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    margin-bottom: 25px;
+    color: #12518e;
+    background: #ffffff;
+    border: 1px solid #b9d8ff;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 5px 20px rgba(20, 80, 140, 0.06);
+}
+
+.hero-badge i {
+    color: #268be9;
+}
+
+/* HEADING */
+
+.hero h1 {
+    color: #10477f;
+    font-size: clamp(20px, 2.5vw, 52px);
+    font-weight: 800;
+    line-height: 1.18;
+    margin-bottom: 22px;
+    letter-spacing: -1.5px;
+}
+
+.hero h1 span {
+    color: #368fe0;
+}
+
+/* DESCRIPTION */
+
+.hero p {
+    color: #245b91;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.9;
+    max-width: 600px;
+    margin-bottom: 28px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-bottom: 42px;
+}
+
+.btn-main,
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-height: 58px;
+    padding: 0 28px;
+
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-main {
+    color: #ffffff;
+    background: #104d85;
+    border: 2px solid #104d85;
+}
+
+.btn-main:hover {
+    background: #087bd0;
+    border-color: #087bd0;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.btn-outline {
+    color: #12518e;
+    background: white;
+    border: 2px solid #328de6;
+}
+
+.btn-outline:hover {
+    color: white;
+    background: #328de6;
+    transform: translateY(-4px);
+}
+
+/* MINI CARDS */
+
+.hero-card-wrapper {
+    margin-top: 5px;
+}
+
+.hero-mini-card {
+    height: 100%;
+    min-height: 140px;
+
+    padding: 20px 15px;
+
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #d3e5fa;
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(20, 75, 130, 0.06);
+
+    transition: 0.3s ease;
+}
+
+.hero-mini-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(20, 75, 130, 0.12);
+}
+
+.hero-mini-card i {
+    display: block;
+    color: #2589df;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.hero-mini-card h6 {
+    color: #10477f;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.hero-mini-card small {
+    color: #3974a9;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* =====================================
+   RIGHT SIDE ADMISSION REMINDER
+===================================== */
+
+.admission-reminder {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 490px;
+
+    justify-self: center;
+    align-self: center;
+
+    padding: 25px 23px;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #104d85,
+        #1763a5
+    );
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 23px;
+
+    box-shadow: 0 18px 40px rgba(15, 65, 115, 0.22);
+
+    overflow: hidden;
+}
+
+/* Decorative Circle */
+
+.admission-reminder::before {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -100px;
+    right: -50px;
+
+    background: rgba(255,255,255,0.07);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.admission-reminder > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* TOP HEADER */
+
+.admission-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 14px;
+}
+
+.closing-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 7px 14px;
+
+    color: white;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* BLINKING GREEN DOT */
+
+.green-dot {
+    width: 9px;
+    height: 9px;
+
+    flex-shrink: 0;
+
+    background: #39e58b;
+    border-radius: 50%;
+
+    box-shadow: 0 0 0 0 rgba(57,229,139,0.7);
+
+    animation: greenBlink 1.4s infinite;
+}
+
+@keyframes greenBlink {
+    0% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(57,229,139,0.7);
+    }
+
+    50% {
+        opacity: 0.45;
+        box-shadow: 0 0 0 7px rgba(57,229,139,0.12);
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(57,229,139,0);
+    }
+}
+
+.admission-month {
+    color: #c5def7;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ADMISSION HEADING */
+
+.admission-heading {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.5;
+
+    margin-bottom: 13px;
+}
+
+.admission-heading span {
+    color: #ffdf24;
+}
+
+/* WARNING BOX */
+
+.admission-warning {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px;
+
+    background: rgba(255, 178, 40, 0.14);
+    border: 1px solid rgba(255, 177, 45, 0.45);
+    border-radius: 12px;
+
+    margin-bottom: 17px;
+}
+
+.warning-icon {
+    font-size: 23px;
+    flex-shrink: 0;
+}
+
+.warning-title {
+    color: #ffdf35;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.warning-subtitle {
+    color: #d5e7f7;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+/* =====================================
+   COUNTDOWN CENTER ALIGNMENT
+===================================== */
+
+.admission-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.countdown {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+}
+
+.time-box {
+    width: 65px;
+    min-height: 65px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 11px;
+
+    text-align: center;
+}
+
+.time-number {
+    color: white;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+}
+
+.time-label {
+    color: #c5def7;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 3px;
+}
+
+.time-separator {
+    color: #b7d8f8;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/* ENROLL BUTTON */
+
+.enroll-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    min-height: 45px;
+    padding: 0 28px;
+
+    color: white;
+    background: #ff9100;
+    border-radius: 11px;
+
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.enroll-button:hover {
+    color: white;
+    background: #ff7100;
+    transform: translateY(-3px);
+}
+
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
+
+@media (max-width: 991px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        padding: 55px 5%;
+    }
+
+    .hero-content {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .admission-reminder {
+        max-width: 550px;
+        width: 100%;
+    }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 40px 18px;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        letter-spacing: -0.8px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 30px;
+    }
+
+    .btn-main,
+    .btn-outline {
+        width: 100%;
+    }
+
+    .hero-mini-card {
+        text-align: center;
+        min-height: 125px;
+    }
+
+    .admission-reminder {
+        padding: 20px 14px;
+        border-radius: 17px;
+    }
+
+    .admission-heading {
+        font-size: 17px;
+    }
+
+    .countdown {
+        gap: 5px;
+    }
+
+    .time-box {
+        width: 57px;
+        min-height: 60px;
+    }
+
+    .time-number {
+        font-size: 20px;
+    }
+
+    .time-separator {
+        font-size: 15px;
+    }
+
+    .admission-top {
+        flex-wrap: wrap;
+    }
+}
+/* =====================================
+   OMGIIT HERO SECTION END
+===================================== */
+
+
+
+    /* ================= NIELIT SECTION TITLE ================= */
+
+    .section {
+      padding: 40px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .section-title .small-title {
+      color: var(--secondary);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 14px;
+    }
+
+    .section-title h2 {
+      color: var(--dark);
+      font-size: 40px;
+      font-weight: 800;
+      margin-top: 8px;
+    }
+
+    .section-title p {
+      max-width: 720px;
+      margin: 15px auto 0;
+    }
+   /* ================= SECTION END ================= */
+
+    /* ================= ABOUT ================= */
+
+    .about-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(7, 26, 51, .15);
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+    }
+
+    .experience-card {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      min-width: 180px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    }
+
+    .experience-card strong {
+      display: block;
+      color: var(--primary);
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    .experience-card span {
+      font-size: 13px;
+    }
+
+    .about-content h2 {
+      color: var(--dark);
+      font-size: 38px;
+      font-weight: 800;
+      margin: 8px 0 20px;
+    }
+
+    .about-content strong {
+      color: var(--primary);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 25px;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 13px;
+    }
+
+    .check-list i {
+      color: #198754;
+      font-size: 20px;
+    }
+   /* ================= ABOUT END ================= */
+
+
+/* =====================================================
+   OMGIIT - NIELIT COURSES DETAILS
+   Premium Professional Responsive Design
+   Desktop / Laptop / Tablet / Mobile
+===================================================== */
+
+:root {
+    --nielit-primary: #104b83;
+    --nielit-dark: #10375f;
+    --nielit-blue: #398de1;
+    --nielit-light: #eff6ff;
+    --nielit-border: #d5e5f8;
+    --nielit-text: #294c70;
+    --nielit-muted: #71859c;
+    --nielit-gold: #f5ae27;
+    --nielit-white: #ffffff;
+}
+
+/* MAIN SECTION */
+
+.nielit-courses-section {
+    width: 100%;
+    padding: 10px 10px;
+    background: transparent;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nielit-courses-section > .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADING */
+
+.nielit-courses-section .section-title {
+    max-width: 850px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.nielit-courses-section .small-title {
+    display: inline-block;
+    padding: 9px 18px;
+    margin-bottom: 15px;
+
+    color: #1766ad;
+    background: #e8f2ff;
+    border: 1px solid #c8def9;
+    border-radius: 50px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.nielit-courses-section .section-title h2 {
+    margin: 0 0 15px;
+
+    color: var(--nielit-primary);
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.nielit-courses-section .section-title p {
+    max-width: 760px;
+    margin: auto;
+
+    color: var(--nielit-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MAIN COURSE PANEL */
+
+.nielit-course-panel {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+
+    background: #ffffff;
+    border: 1px solid var(--nielit-border);
+    border-radius: 17px;
+
+    box-shadow: 0 15px 45px rgba(16, 75, 131, .09);
+    overflow: hidden;
+}
+
+/* =====================================================
+   LEFT COURSE TABS
+===================================================== */
+
+.nielit-course-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 22px;
+
+    background: #edf5ff;
+    border-right: 1px solid var(--nielit-border);
+}
+
+/* COURSE BUTTON */
+
+.nielit-course-tab {
+    width: 100%;
+    min-height: 76px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 12px 16px;
+
+    background: #ffffff;
+    border: 1px solid #d5e5f8;
+    border-radius: 10px;
+
+    text-align: left;
+    color: var(--nielit-primary);
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* COURSE NUMBER */
+
+.nielit-course-tab small {
+    display: block;
+    margin-bottom: 5px;
+
+    color: #7a94b0;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+/* COURSE NAME */
+
+.nielit-course-tab strong {
+    display: block;
+
+    color: var(--nielit-primary);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* COURSE HOURS */
+
+.nielit-course-tab em {
+    display: block;
+    margin-top: 4px;
+
+    color: var(--nielit-muted);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* HOVER */
+
+.nielit-course-tab:hover {
+    background: #f5faff;
+    border-color: var(--nielit-blue);
+    transform: translateX(4px);
+}
+
+/* ACTIVE TAB */
+
+.nielit-course-tab.active,
+.nielit-course-tab[aria-selected="true"] {
+    background: var(--nielit-primary);
+    border-color: var(--nielit-primary);
+    box-shadow: 0 5px 15px rgba(16, 75, 131, .18);
+}
+
+.nielit-course-tab.active small,
+.nielit-course-tab[aria-selected="true"] small {
+    color: #c6e0ff;
+}
+
+.nielit-course-tab.active strong,
+.nielit-course-tab[aria-selected="true"] strong {
+    color: #ffffff;
+}
+
+.nielit-course-tab.active em,
+.nielit-course-tab[aria-selected="true"] em {
+    color: #dcecff;
+}
+
+/* =====================================================
+   RIGHT COURSE CONTENT
+===================================================== */
+
+.nielit-course-content {
+    min-width: 0;
+    padding: 38px 40px;
+    background: #ffffff;
+}
+
+/* EYEBROW */
+
+.nielit-course-eyebrow {
+    display: inline-block;
+    margin: 0 0 10px;
+
+    color: #398de1;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+}
+
+/* COURSE TITLE */
+
+.nielit-course-content h3 {
+    margin: 0 0 8px;
+
+    color: var(--nielit-primary);
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+/* SUBTITLE */
+
+.nielit-course-subtitle {
+    margin: 0 0 18px;
+
+    color: var(--nielit-muted);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* COURSE PILLS */
+
+.nielit-course-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 22px;
+}
+
+.nielit-course-pill {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 9px 15px;
+
+    background: #edf5ff;
+    border: 1px solid #c9def8;
+    border-radius: 50px;
+
+    color: #1766ad;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+/* SEPARATOR */
+
+.nielit-course-rule {
+    width: 100%;
+    height: 1px;
+    margin: 0 0 22px;
+    background: #e4edf8;
+}
+
+/* DESCRIPTION */
+
+.nielit-course-description {
+    margin: 0 0 25px;
+
+    color: #526d89;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+/* LEARNING SUBHEADING */
+
+.nielit-course-subheading {
+    margin: 0 0 15px;
+    padding-left: 12px;
+
+    border-left: 4px solid var(--nielit-gold);
+
+    color: var(--nielit-primary);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* LEARNING TAGS */
+
+.nielit-course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+
+    margin-bottom: 27px;
+}
+
+.nielit-course-tags span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 13px;
+
+    background: #f0f6ff;
+    border: 1px solid #d1e3fa;
+    border-radius: 6px;
+
+    color: #2469a7;
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.nielit-course-tags span:hover {
+    background: #dcecff;
+    border-color: #86b8ef;
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   COURSE INFORMATION GRID
+===================================================== */
+
+.nielit-course-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+
+    margin-bottom: 28px;
+}
+
+.nielit-course-info-grid > div {
+    min-width: 0;
+    min-height: 82px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 14px 16px;
+
+    background: #f5f9ff;
+    border: 1px solid #d5e5f8;
+    border-radius: 9px;
+
+    transition: .3s ease;
+}
+
+.nielit-course-info-grid > div:hover {
+    background: #eaf3ff;
+    border-color: #9dc4ed;
+    transform: translateY(-2px);
+}
+
+/* INFO LABEL */
+
+.nielit-course-info-grid small {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #3982c6;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+/* INFO VALUE */
+
+.nielit-course-info-grid strong {
+    display: block;
+
+    color: #174d80;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+}
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.nielit-course-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ENROLL BUTTON */
+
+.nielit-course-enquire {
+    min-height: 47px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 22px;
+
+    background: var(--nielit-primary);
+    border: 1px solid var(--nielit-primary);
+    border-radius: 50px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition: .3s ease;
+}
+
+.nielit-course-enquire:hover {
+    color: #ffffff;
+    background: #287fc9;
+    border-color: #287fc9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(16, 75, 131, .2);
+}
+
+/* OFFICIAL WEBSITE BUTTON */
+
+.nielit-course-official {
+    min-height: 47px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 19px;
+
+    background: #ffffff;
+    border: 1px solid #bdd8f6;
+    border-radius: 50px;
+
+    color: #1766ad;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition: .3s ease;
+}
+
+.nielit-course-official:hover {
+    color: #ffffff;
+    background: #398de1;
+    border-color: #398de1;
+}
+
+/* =====================================================
+   LARGE DESKTOP - 1200px+
+===================================================== */
+
+@media (min-width: 1200px) {
+
+    .nielit-courses-section {
+        padding: 90px 30px;
+    }
+
+    .nielit-course-panel {
+        grid-template-columns: 270px minmax(0, 1fr);
+    }
+
+    .nielit-course-content {
+        padding: 42px 45px;
+    }
+}
+
+/* =====================================================
+   LAPTOP - 992px TO 1199px
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .nielit-courses-section {
+        padding: 70px 25px;
+    }
+
+    .nielit-course-panel {
+        grid-template-columns: 235px minmax(0, 1fr);
+    }
+
+    .nielit-course-tabs {
+        padding: 18px;
+    }
+
+    .nielit-course-content {
+        padding: 30px;
+    }
+
+    .nielit-course-content h3 {
+        font-size: 29px;
+    }
+
+    .nielit-course-info-grid > div {
+        padding: 12px;
+    }
+}
+
+/* =====================================================
+   TABLET - 577px TO 991px
+===================================================== */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .nielit-courses-section {
+        padding: 60px 22px;
+    }
+
+    .nielit-courses-section .section-title h2 {
+        font-size: 34px;
+    }
+
+    .nielit-course-panel {
+        grid-template-columns: 200px minmax(0, 1fr);
+    }
+
+    .nielit-course-tabs {
+        padding: 14px;
+        gap: 9px;
+    }
+
+    .nielit-course-tab {
+        min-height: 72px;
+        padding: 10px 12px;
+    }
+
+    .nielit-course-tab strong {
+        font-size: 16px;
+    }
+
+    .nielit-course-content {
+        padding: 25px 20px;
+    }
+
+    .nielit-course-content h3 {
+        font-size: 27px;
+    }
+
+    .nielit-course-subtitle {
+        font-size: 14px;
+    }
+
+    .nielit-course-info-grid {
+        gap: 9px;
+    }
+
+    .nielit-course-info-grid > div {
+        padding: 11px;
+    }
+
+    .nielit-course-info-grid strong {
+        font-size: 12px;
+    }
+
+    .nielit-course-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nielit-course-enquire,
+    .nielit-course-official {
+        width: 100%;
+    }
+}
+
+/* =====================================================
+   MOBILE - 576px AND BELOW
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .nielit-courses-section {
+        padding: 48px 14px;
+    }
+
+    .nielit-courses-section .section-title {
+        margin-bottom: 27px;
+    }
+
+    .nielit-courses-section .small-title {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .nielit-courses-section .section-title h2 {
+        font-size: 27px;
+    }
+
+    .nielit-courses-section .section-title p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* STACKED PANEL */
+
+    .nielit-course-panel {
+        grid-template-columns: minmax(0, 1fr);
+        border-radius: 13px;
+    }
+
+    /* HORIZONTAL COURSE TABS */
+
+    .nielit-course-tabs {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        gap: 9px;
+        padding: 12px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--nielit-border);
+
+        scrollbar-width: thin;
+        scrollbar-color: #9cbce0 #edf5ff;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nielit-course-tab {
+        flex: 0 0 120px;
+        width: 120px;
+        min-height: 83px;
+
+        padding: 11px;
+        border-radius: 9px;
+    }
+
+    .nielit-course-tab small {
+        font-size: 9px;
+    }
+
+    .nielit-course-tab strong {
+        font-size: 16px;
+    }
+
+    .nielit-course-tab em {
+        font-size: 10px;
+    }
+
+    .nielit-course-tab:hover {
+        transform: translateY(-2px);
+    }
+
+    /* COURSE DETAILS */
+
+    .nielit-course-content {
+        padding: 25px 17px 28px;
+    }
+
+    .nielit-course-eyebrow {
+        font-size: 10px;
+    }
+
+    .nielit-course-content h3 {
+        font-size: 27px;
+    }
+
+    .nielit-course-subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .nielit-course-pills {
+        gap: 7px;
+    }
+
+    .nielit-course-pill {
+        padding: 8px 11px;
+        font-size: 11px;
+    }
+
+    .nielit-course-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* LEARNING TAGS */
+
+    .nielit-course-subheading {
+        font-size: 16px;
+    }
+
+    .nielit-course-tags {
+        gap: 8px;
+        margin-bottom: 23px;
+    }
+
+    .nielit-course-tags span {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    /* INFO GRID */
+
+    .nielit-course-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .nielit-course-info-grid > div {
+        min-height: 90px;
+        padding: 11px;
+    }
+
+    .nielit-course-info-grid small {
+        font-size: 9px;
+    }
+
+    .nielit-course-info-grid strong {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* BUTTONS */
+
+    .nielit-course-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .nielit-course-enquire,
+    .nielit-course-official {
+        width: 100%;
+        min-height: 47px;
+        font-size: 12px;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE - 380px AND BELOW
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .nielit-courses-section {
+        padding: 38px 11px;
+    }
+
+    .nielit-courses-section .section-title h2 {
+        font-size: 24px;
+    }
+
+    .nielit-course-tabs {
+        padding: 10px;
+    }
+
+    .nielit-course-tab {
+        flex-basis: 110px;
+        width: 110px;
+    }
+
+    .nielit-course-content {
+        padding: 21px 13px;
+    }
+
+    .nielit-course-content h3 {
+        font-size: 24px;
+    }
+
+    .nielit-course-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nielit-course-info-grid > div {
+        min-height: 70px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+.nielit-course-tab:focus-visible,
+.nielit-course-enquire:focus-visible,
+.nielit-course-official:focus-visible {
+    outline: 3px solid var(--nielit-gold);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .nielit-courses-section *,
+    .nielit-courses-section *::before,
+    .nielit-courses-section *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* OKCL Style */
+
+/* =====================================================
+   OMGIIT - PREMIUM COURSES SECTION
+   Responsive: Desktop / Laptop / Tablet / Mobile
+===================================================== */
+
+:root {
+    --course-primary: #104b83;
+    --course-dark: #10375f;
+    --course-blue: #398de1;
+    --course-light: #eff6ff;
+    --course-border: #d5e5f8;
+    --course-text: #294c70;
+    --course-muted: #6b829b;
+    --course-gold: #f5ae27;
+    --course-white: #ffffff;
+}
+
+/* MAIN SECTION */
+
+.courses-section {
+    width: 100%;
+    padding: 85px 24px;
+    background: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.courses-section .section-heading {
+    max-width: 850px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+/* SECTION KICKER */
+
+.courses-section .kicker {
+    display: inline-block;
+    padding: 9px 18px;
+    margin-bottom: 16px;
+
+    color: #1766ad;
+    background: #e8f2ff;
+    border: 1px solid #c8def9;
+    border-radius: 50px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* HEADING */
+
+.courses-section .section-heading h2 {
+    margin: 0 0 15px;
+
+    color: var(--course-primary);
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.courses-section .section-heading h2 span {
+    color: var(--course-blue);
+}
+
+.courses-section .section-heading p {
+    max-width: 700px;
+    margin: auto;
+
+    color: var(--course-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* MAIN COURSE PANEL */
+
+.course-panel {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 310px minmax(0, 1fr);
+
+    background: var(--course-white);
+    border: 1px solid var(--course-border);
+    border-radius: 18px;
+
+    box-shadow: 0 15px 45px rgba(16, 75, 131, .09);
+    overflow: hidden;
+}
+
+/* LEFT COURSE NAVIGATION */
+
+.course-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 25px;
+
+    background: #edf5ff;
+    border-right: 1px solid var(--course-border);
+}
+
+/* COURSE TAB BUTTON */
+
+.course-tab {
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 15px 18px;
+
+    background: #ffffff;
+    border: 1px solid #d5e5f8;
+    border-radius: 11px;
+
+    color: var(--course-primary);
+    text-align: left;
+
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* COURSE NUMBER */
+
+.course-tab small {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #7a94b0;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    text-transform: uppercase;
+}
+
+/* COURSE NAME */
+
+.course-tab strong {
+    display: block;
+    color: var(--course-primary);
+
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/* COURSE DURATION */
+
+.course-tab em {
+    display: block;
+    margin-top: 5px;
+
+    color: var(--course-muted);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* TAB HOVER */
+
+.course-tab:hover {
+    background: #f5faff;
+    border-color: var(--course-blue);
+    transform: translateX(4px);
+}
+
+/* ACTIVE TAB */
+
+.course-tab.active,
+.course-tab[aria-selected="true"] {
+    background: var(--course-primary);
+    border-color: var(--course-primary);
+    box-shadow: 0 6px 18px rgba(16, 75, 131, .2);
+}
+
+.course-tab.active small,
+.course-tab[aria-selected="true"] small {
+    color: #bcdcff;
+}
+
+.course-tab.active strong,
+.course-tab[aria-selected="true"] strong {
+    color: #ffffff;
+}
+
+.course-tab.active em,
+.course-tab[aria-selected="true"] em {
+    color: #d9eaff;
+}
+
+/* RIGHT COURSE CONTENT */
+
+.course-content {
+    min-width: 0;
+    padding: 42px 45px;
+    background: #ffffff;
+}
+
+/* COURSE TITLE */
+
+.course-content h3 {
+    margin: 0 0 8px;
+
+    color: var(--course-primary);
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+/* COURSE SUBTITLE */
+
+.course-subtitle {
+    margin: 0 0 18px;
+
+    color: var(--course-muted);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+/* COURSE DURATION BADGE */
+
+.course-duration {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 9px 17px;
+
+    color: #1766ad;
+    background: #edf5ff;
+    border: 1px solid #c9def8;
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* SEPARATOR */
+
+.course-content .rule {
+    width: 100%;
+    height: 1px;
+
+    margin: 25px 0;
+
+    background: #e5edf7;
+}
+
+/* COURSE DESCRIPTION */
+
+.course-description {
+    margin: 0 0 25px;
+
+    color: #526d89;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+/* COURSE TAGS */
+
+.course-content .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.course-content .tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 14px;
+
+    background: #f0f6ff;
+    border: 1px solid #d1e3fa;
+    border-radius: 6px;
+
+    color: #2469a7;
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.course-content .tag:hover {
+    background: #dcecff;
+    border-color: #86b8ef;
+    transform: translateY(-2px);
+}
+
+/* ENROLL BUTTON */
+
+.course-link {
+    min-width: 175px;
+    min-height: 48px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    padding: 13px 23px;
+
+    background: var(--course-primary);
+    border-radius: 50px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition: all .3s ease;
+}
+
+.course-link span {
+    font-size: 21px;
+    line-height: 1;
+    transition: transform .3s ease;
+}
+
+.course-link:hover {
+    color: #ffffff;
+    background: #287fc9;
+    box-shadow: 0 7px 20px rgba(16, 75, 131, .2);
+    transform: translateY(-3px);
+}
+
+.course-link:hover span {
+    transform: translateX(5px);
+}
+
+/* =====================================================
+   LARGE DESKTOP - 1200px AND ABOVE
+===================================================== */
+
+@media (min-width: 1200px) {
+
+    .courses-section {
+        padding: 90px 30px;
+    }
+
+    .course-panel {
+        grid-template-columns: 310px minmax(0, 1fr);
+    }
+
+    .course-content {
+        padding: 45px 50px;
+    }
+}
+
+/* =====================================================
+   LAPTOP - 992px TO 1199px
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .courses-section {
+        padding: 70px 25px;
+    }
+
+    .course-panel {
+        grid-template-columns: 270px minmax(0, 1fr);
+    }
+
+    .course-tabs {
+        padding: 20px;
+    }
+
+    .course-content {
+        padding: 35px;
+    }
+
+    .course-content h3 {
+        font-size: 30px;
+    }
+}
+
+/* =====================================================
+   TABLET - 577px TO 991px
+===================================================== */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .courses-section {
+        padding: 65px 22px;
+    }
+
+    .courses-section .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .course-panel {
+        grid-template-columns: 220px minmax(0, 1fr);
+    }
+
+    .course-tabs {
+        padding: 17px;
+        gap: 10px;
+    }
+
+    .course-tab {
+        min-height: 85px;
+        padding: 13px;
+    }
+
+    .course-tab strong {
+        font-size: 17px;
+    }
+
+    .course-content {
+        padding: 28px 24px;
+    }
+
+    .course-content h3 {
+        font-size: 28px;
+    }
+
+    .course-subtitle {
+        font-size: 14px;
+    }
+
+    .course-description {
+        font-size: 14px;
+    }
+
+    .course-content .tags {
+        gap: 8px;
+    }
+
+    .course-content .tag {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+}
+
+/* =====================================================
+   MOBILE - 576px AND BELOW
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .courses-section {
+        padding: 48px 14px;
+    }
+
+    .courses-section .section-heading {
+        margin-bottom: 27px;
+    }
+
+    .courses-section .kicker {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+    .courses-section .section-heading h2 {
+        font-size: 27px;
+        line-height: 1.35;
+    }
+
+    .courses-section .section-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* PANEL STACKING */
+
+    .course-panel {
+        grid-template-columns: minmax(0, 1fr);
+        border-radius: 13px;
+    }
+
+    /* HORIZONTAL COURSE TABS */
+
+    .course-tabs {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        gap: 10px;
+        padding: 13px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--course-border);
+
+        scrollbar-width: thin;
+        scrollbar-color: #9cbce0 #edf5ff;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .course-tab {
+        flex: 0 0 135px;
+        width: 135px;
+        min-height: 85px;
+
+        padding: 11px 12px;
+        border-radius: 9px;
+    }
+
+    .course-tab strong {
+        font-size: 16px;
+    }
+
+    .course-tab small {
+        font-size: 10px;
+    }
+
+    .course-tab em {
+        font-size: 11px;
+    }
+
+    .course-tab:hover {
+        transform: translateY(-2px);
+    }
+
+    /* COURSE DETAILS */
+
+    .course-content {
+        padding: 25px 19px 28px;
+    }
+
+    .course-content h3 {
+        font-size: 27px;
+    }
+
+    .course-subtitle {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .course-duration {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+
+    .course-content .rule {
+        margin: 20px 0;
+    }
+
+    .course-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* TAGS */
+
+    .course-content .tags {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    .course-content .tag {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    /* ENROLL BUTTON */
+
+    .course-link {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE - 380px AND BELOW
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .courses-section {
+        padding: 38px 11px;
+    }
+
+    .courses-section .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .course-tabs {
+        padding: 10px;
+    }
+
+    .course-tab {
+        flex-basis: 125px;
+        width: 125px;
+    }
+
+    .course-content {
+        padding: 22px 14px;
+    }
+
+    .course-content h3 {
+        font-size: 24px;
+    }
+
+    .course-content .tag {
+        font-size: 10px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+.course-tab:focus-visible,
+.course-link:focus-visible {
+    outline: 3px solid var(--course-gold);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .courses-section *,
+    .courses-section *::before,
+    .courses-section *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* =====================================================
+   OMGIIT - GOVERNMENT GAZETTE & CERTIFICATE SECTION
+   Reference: AMA Computer Academy
+   Browser Zoom: 100%
+   Responsive: Desktop / Laptop / Tablet / Mobile
+===================================================== */
+
+/* MAIN SECTION */
+
+.gazette-section {
+    width: 100%;
+    padding: 75px 24px 85px;
+    background: transparent;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gazette-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADING */
+
+.gazette-section > .gazette-inner > .section-heading {
+    max-width: 850px;
+    margin: 0 auto 34px;
+    text-align: center;
+}
+
+.gov-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 17px;
+    margin-bottom: 15px;
+    background: #eff6ff;
+    border: 1px solid #bdd9ff;
+    border-radius: 50px;
+    color: #1766b3;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.gov-pill::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    margin-right: 9px;
+    background: #3996f0;
+    border-radius: 50%;
+}
+
+.gazette-section .section-heading h2 {
+    margin: 0 0 15px;
+    color: #104b83;
+    font-size: 38px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.gazette-section .section-heading h2 span {
+    color: orange;
+    margin-left: 8px;
+}
+
+.gazette-section .section-heading p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* CERTIFICATE NAVIGATION */
+
+.gazette-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto 32px;
+}
+
+.gazette-tab {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 43px;
+    padding: 11px 19px;
+    border: 1px solid #bfd8fa;
+    border-radius: 30px;
+    background: #f0f6ff;
+    color: #1765ad;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.gazette-tab:hover {
+    background: #dcecff;
+    border-color: #398de1;
+}
+
+.gazette-tab.active,
+.gazette-tab[aria-selected="true"] {
+    color: #ffffff;
+    background: #104b83;
+    border-color: #104b83;
+    box-shadow: 0 4px 12px rgba(16, 75, 131, .16);
+}
+
+/* MAIN TWO COLUMN LAYOUT */
+
+.gazette-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 0.68fr) minmax(0, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+/* LEFT DOCUMENT */
+
+.document-frame {
+    width: 100%;
+    min-width: 0;
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #edf1f6;
+    border-radius: 12px;
+}
+
+.document-frame img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 850px;
+    object-fit: contain;
+    object-position: top center;
+    border-radius: 5px;
+}
+
+.document-placeholder {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    background: transparent;
+    border: 2px dashed #b7d1ed;
+    border-radius: 10px;
+}
+
+.document-placeholder[hidden] {
+    display: none !important;
+}
+
+.blank-icon {
+    margin-bottom: 15px;
+    font-size: 65px;
+    color: #398de1;
+}
+
+.document-placeholder p {
+    color: #58738f;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* RIGHT DETAILS */
+
+.gazette-grid > .details {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    background: transparent;
+}
+
+.eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    color: #398de1;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+}
+
+.details h3 {
+    margin: 0 0 12px;
+    color: #104b83;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.details > p {
+    margin: 0 0 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4edf8;
+    color: #09131d;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* INFORMATION CARDS */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e4edf8;
+}
+
+.info {
+    min-width: 0;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    background: #f6faff;
+    border: 1px solid #d5e5fb;
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.info:hover {
+    background: #eaf3ff;
+    border-color: #8fbbef;
+    transform: translateY(-3px);
+}
+
+.info .icon {
+    width: 37px;
+    height: 37px;
+    min-width: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8f1fb;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.info-content {
+    min-width: 0;
+}
+
+.info-content small {
+    display: block;
+    margin-bottom: 5px;
+    color: #3982c6;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.info-content b {
+    display: block;
+    color: #174d80;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* GOVERNMENT JOBS */
+
+.jobs-title {
+    margin: 0 0 13px;
+    color: #174d80;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.job {
+    position: relative;
+    min-width: 0;
+    padding: 13px 12px 13px 24px;
+    background: #eef5ff;
+    border: 1px solid #c7ddfb;
+    border-radius: 8px;
+    color: #3673ad;
+    font-size: 14px;
+    line-height: 1.6;
+    transition: .3s ease;
+}
+
+.job::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 19px;
+    width: 6px;
+    height: 6px;
+    background: #1769bd;
+    border-radius: 50%;
+}
+
+.job:hover {
+    background: #dfedff;
+    border-color: #82b4ed;
+    transform: translateY(-2px);
+}
+
+.job b {
+    display: block;
+    margin-bottom: 3px;
+    color: #174d80;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* BOTTOM TAGS AND BUTTON */
+
+.gazette-grid .gazette-section {
+    width: 600%;
+    padding: 0;
+    background: transparent;
+    overflow: visible;
+}
+
+.gazette-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.gazette-tag {
+    padding: 8px 11px;
+    background: #edf5ff;
+    border: 1px solid #c8def9;
+    border-radius: 5px;
+    color: #1765ad;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.gazette-action {
+    width: fit-content;
+    min-width: 230px;
+    min-height: 46px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+    background: #104b83;
+    border-radius: 30px;
+    color: #ffffff !important;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    transition: .3s ease;
+}
+
+.gazette-action::before {
+    content: "";
+    margin-right: 9px;
+}
+
+.gazette-action:hover {
+    color: #ffffff;
+    background: #287fca;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(16, 75, 131, .2);
+}
+
+/* =====================================================
+   LARGE DESKTOP - 1200px AND ABOVE
+===================================================== */
+/* 
+@media (min-width: 1200px) {
+
+    .gazette-inner {
+        max-width: 1200px;
+    }
+
+    .gazette-grid {
+        grid-template-columns: minmax(0, 450px) minmax(0, 1fr);
+        gap: 35px;
+    }
+
+    .document-frame {
+        min-height: 480px;
+    }
+}  */
+
+/* =====================================================
+   LAPTOP - 992px TO 1199px
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .gazette-section {
+        padding: 65px 25px;
+    }
+
+    .gazette-grid {
+        grid-template-columns: minmax(0, .8fr) minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .details h3 {
+        font-size: 23px;
+    }
+
+    .info {
+        padding: 11px;
+    }
+
+    .info-content b {
+        font-size: 12px;
+    }
+}
+
+/* =====================================================
+   TABLET - 577px TO 991px
+===================================================== */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .gazette-section {
+        padding: 60px 25px;
+    }
+
+    .gazette-section .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .gazette-tabs {
+        justify-content: center;
+        gap: 9px;
+    }
+
+    .gazette-tab {
+        padding: 11px 15px;
+        font-size: 12px;
+    }
+
+    .gazette-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .document-frame {
+        width: 100%;
+        max-width: 550px;
+        min-height: 400px;
+        margin: 0 auto;
+    }
+
+    .document-frame img {
+        max-height: 650px;
+    }
+
+    .gazette-grid > .details {
+        width: 100%;
+    }
+
+    .details h3 {
+        font-size: 25px;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .jobs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =====================================================
+   MOBILE - 576px AND BELOW
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .gazette-section {
+        padding: 45px 15px;
+    }
+
+    .gazette-section .section-heading {
+        margin-bottom: 25px;
+    }
+
+    .gov-pill {
+        font-size: 11px;
+        padding: 8px 13px;
+    }
+
+    .gazette-section .section-heading h2 {
+        font-size: 27px;
+        line-height: 1.35;
+    }
+
+    .gazette-section .section-heading h2 span {
+        display: block;
+        margin: 3px 0 0;
+    }
+
+    .gazette-section .section-heading p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* HORIZONTAL SCROLL TABS */
+
+    .gazette-tabs {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 5px 2px 12px;
+        margin-bottom: 22px;
+
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .gazette-tab {
+        flex: 0 0 auto;
+        min-height: 42px;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    /* STACKED LAYOUT */
+
+    .gazette-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .document-frame {
+        min-height: 280px;
+        padding: 10px;
+    }
+
+    .document-frame img {
+        max-height: 480px;
+    }
+
+    .document-placeholder {
+        min-height: 250px;
+    }
+
+    /* DETAILS */
+
+    .gazette-grid > .details {
+        padding: 0;
+    }
+
+    .eyebrow {
+        font-size: 11px;
+    }
+
+    .details h3 {
+        font-size: 22px;
+    }
+
+    .details > p {
+        font-size: 14px;
+    }
+
+    /* INFO CARDS */
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .info {
+        min-height: 75px;
+    }
+
+    .info-content b {
+        font-size: 13px;
+    }
+
+    /* JOB CARDS */
+
+    .jobs-title {
+        font-size: 16px;
+    }
+
+    .jobs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .job {
+        padding: 12px 9px 12px 21px;
+        font-size: 11px;
+    }
+
+    .job::before {
+        left: 9px;
+    }
+
+    .job b {
+        font-size: 12px;
+    }
+
+    /* TAGS */
+
+    .gazette-tags {
+        gap: 7px;
+    }
+
+    .gazette-tag {
+        padding: 7px 9px;
+        font-size: 10px;
+    }
+
+    .gazette-action {
+        width: 100%;
+        min-width: 0;
+        min-height: 48px;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+
+    .gazette-section {
+        padding: 35px 12px;
+    }
+
+    .gazette-section .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .jobs {
+        grid-template-columns: 1fr;
+    }
+
+    .document-frame {
+        min-height: 230px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+.gazette-tab:focus-visible,
+.gazette-action:focus-visible {
+    outline: 3px solid #f5a900;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gazette-section *,
+    .gazette-section *::before,
+    .gazette-section *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+/* Reviews */
+/* =====================================================
+   OMGIIT - STUDENT REVIEWS & TESTIMONIALS
+   Responsive Desktop / Laptop / Tablet / Mobile
+===================================================== */
+
+:root {
+    --review-primary: #104b83;
+    --review-dark: #10375f;
+    --review-blue: #398de1;
+    --review-light: #eff6ff;
+    --review-border: #d5e5f8;
+    --review-text: #294c70;
+    --review-muted: #71859c;
+    --review-gold: #f5ae27;
+    --review-white: #ffffff;
+}
+
+/* MAIN SECTION */
+
+.reviews-section {
+    width: 100%;
+    padding: 10px 10px;
+    background: transparent;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION HEADING */
+
+.reviews-section .section-heading {
+    max-width: 850px;
+    margin: 0 auto 42px;
+    text-align: center;
+}
+
+.reviews-section .kicker {
+    display: inline-block;
+    padding: 9px 18px;
+    margin-bottom: 15px;
+    color: #1766ad;
+    background: #e8f2ff;
+    border: 1px solid #c8def9;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.reviews-section .section-heading h2 {
+    margin: 0 0 15px;
+    color: var(--review-primary);
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.reviews-section .section-heading h2 span {
+    color: var(--review-blue);
+}
+
+.reviews-section .section-heading p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* =====================================================
+   STATISTICS SECTION
+===================================================== */
+
+.reviews-section .stats {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* STAT CARD */
+
+.reviews-section .stat {
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background: #ffffff;
+    border: 1px solid var(--review-border);
+    border-radius: 13px;
+    box-shadow: 0 7px 25px rgba(16, 75, 131, .06);
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.reviews-section .stat:hover {
+    transform: translateY(-6px);
+    border-color: #9bc5ee;
+    box-shadow: 0 13px 30px rgba(16, 75, 131, .12);
+}
+
+/* STAT NUMBER */
+
+.reviews-section .stat strong {
+    display: block;
+    margin-bottom: 9px;
+    color: black;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* STARS */
+
+.reviews-section .stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 0 8px;
+    color: var(--review-gold);
+    font-size: 19px;
+}
+
+.reviews-section .stars::before {
+    content: "";
+    letter-spacing: 3px;
+}
+
+/* STAT LABEL */
+
+.reviews-section .stat small {
+    color: var(--review-muted);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* =====================================================
+   REVIEW SLIDER WINDOW
+===================================================== */
+
+.reviews-section .review-window {
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0 20px;
+
+    /* Fade edges */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 4%,
+        #000 96%,
+        transparent
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 4%,
+        #000 96%,
+        transparent
+    );
+}
+
+/* REVIEW TRACK */
+
+.reviews-section .review-track {
+    display: flex;
+    align-items: stretch;
+    width: max-content;
+    gap: 8px;
+    animation: omgReviewScroll 35s linear infinite;
+    will-change: transform;
+}
+
+/* PAUSE ON HOVER */
+
+.reviews-section .review-window:hover .review-track {
+    animation-play-state: paused;
+}
+
+/* REVIEW CARD
+   These styles support .review-card elements
+   generated inside #reviewTrack by JavaScript.
+*/
+
+.reviews-section .review-card {
+    flex: 0 0 340px;
+    width: 240px;
+    height: 230px;
+    display: block;
+    flex-direction: column;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid var(--review-border);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(16, 75, 131, .07);
+    transition: all .3s ease;
+}
+
+.reviews-section .review-card:hover {
+    transform: translateY(-5px);
+    border-color: #9bc5ee;
+    box-shadow: 0 14px 32px rgba(16, 75, 131, .12);
+}
+
+/* REVIEW STARS */
+
+.reviews-section .review-card .stars {
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+/* REVIEW TEXT */
+
+.reviews-section .review-card p {
+    margin: 0 0 20px;
+    color: #526d89;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* REVIEW STUDENT NAME */
+
+.reviews-section .review-card h4 {
+    margin: auto 0 4px;
+    color: var(--review-primary);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* STUDENT COURSE */
+
+.reviews-section .review-card small {
+    color: var(--review-muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* STUDENT PROFILE AREA */
+
+.reviews-section .review-card .review-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e7eef7;
+}
+
+/* PROFILE IMAGE */
+.reviews-section .review-card .review-user img {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #d5e5f8;
+}
+
+/* AVATAR */
+
+.reviews-section .review-card .review-avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #e8f2ff;
+    border-radius: 50%;
+    color: var(--review-primary);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* =====================================================
+   AUTO SCROLL ANIMATION
+===================================================== */
+
+@keyframes omgReviewScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* =====================================================
+   LARGE DESKTOP - 1200px+
+===================================================== */
+
+@media (min-width: 1200px) {
+
+    .reviews-section {
+        padding: 90px 30px;
+    }
+
+    .reviews-section .stats {
+        gap: 22px;
+    }
+
+    .reviews-section .review-card {
+        flex-basis: 350px;
+        width: 350px;
+    }
+
+}
+
+/* =====================================================
+   LAPTOP - 992px TO 1199px
+===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .reviews-section {
+        padding: 70px 25px;
+    }
+
+    .reviews-section .stats {
+        gap: 15px;
+    }
+
+    .reviews-section .stat strong {
+        font-size: 30px;
+    }
+
+    .reviews-section .review-card {
+        flex-basis: 320px;
+        width: 320px;
+    }
+
+}
+
+/* =====================================================
+   TABLET - 577px TO 991px
+===================================================== */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .reviews-section {
+        padding: 65px 22px;
+    }
+
+    .reviews-section .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .reviews-section .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+
+        margin-bottom: 35px;
+    }
+
+    .reviews-section .stat {
+        min-height: 125px;
+    }
+
+    .reviews-section .stat strong {
+        font-size: 30px;
+    }
+
+    .reviews-section .review-card {
+        flex-basis: 310px;
+        width: 310px;
+        min-height: 220px;
+        padding: 22px;
+    }
+
+    .reviews-section .review-track {
+        gap: 16px;
+        animation-duration: 30s;
+    }
+
+}
+
+/* =====================================================
+   MOBILE - 576px AND BELOW
+===================================================== */
+
+@media (max-width: 576px) {
+
+    .reviews-section {
+        padding: 48px 14px;
+    }
+
+    .reviews-section .section-heading {
+        margin-bottom: 28px;
+    }
+
+    .reviews-section .kicker {
+        padding: 8px 13px;
+        font-size: 10px;
+    }
+
+    .reviews-section .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .reviews-section .section-heading p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* TWO COLUMN STATS */
+
+    .reviews-section .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+
+        margin-bottom: 28px;
+    }
+
+    .reviews-section .stat {
+        min-height: 112px;
+        padding: 16px 8px;
+
+        border-radius: 10px;
+    }
+
+    .reviews-section .stat strong {
+        font-size: 27px;
+        margin-bottom: 7px;
+    }
+
+    .reviews-section .stat small {
+        font-size: 11px;
+    }
+
+    .reviews-section .stars {
+        font-size: 16px;
+    }
+
+    /* MOBILE REVIEW SLIDER */
+
+    .reviews-section .review-window {
+        padding: 8px 0 15px;
+    }
+
+    .reviews-section .review-track {
+        gap: 12px;
+        animation-duration: 28s;
+    }
+
+    .reviews-section .review-card {
+        flex: 0 0 280px;
+
+        width: 280px;
+        min-height: 220px;
+
+        padding: 20px;
+
+        border-radius: 12px;
+    }
+
+    .reviews-section .review-card p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .reviews-section .review-card h4 {
+        font-size: 15px;
+    }
+
+    .reviews-section .review-card small {
+        font-size: 11px;
+    }
+
+}
+
+/* =====================================================
+   SMALL MOBILE - 380px AND BELOW
+===================================================== */
+
+@media (max-width: 380px) {
+
+    .reviews-section {
+        padding: 38px 11px;
+    }
+
+    .reviews-section .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .reviews-section .stats {
+        gap: 8px;
+    }
+
+    .reviews-section .stat {
+        min-height: 105px;
+        padding: 12px 5px;
+    }
+
+    .reviews-section .stat strong {
+        font-size: 24px;
+    }
+
+    .reviews-section .stat small {
+        font-size: 10px;
+    }
+
+    .reviews-section .review-card {
+        flex-basis: 260px;
+        width: 260px;
+        padding: 17px;
+    }
+
+}
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .reviews-section .review-track {
+        animation: none;
+        transform: none;
+    }
+
+    .reviews-section *,
+    .reviews-section *::before,
+    .reviews-section *::after {
+        transition: none !important;
+    }
+
+}

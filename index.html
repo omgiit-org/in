@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>index</title>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Poppins:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index-style.css">
+</head>
+<body>
+  <canvas id="network"></canvas>
+<!-- NAVBAR 
+<div class="gov-top-bar-container">
+<p>🏛️Government of Odisha</p>
+</div>  -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img alt="OMM Ganapati Institute Logo" class="institute0-logo" src="omgiit.png"/>
+      OMG <span>IIT</span>
+</a>
+<button class="navbar-toggler" data-bs-target="#mainNavbar" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="mainNavbar">
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item">
+<a class="nav-link" href="index.html">
+            Home
+          </a>
+</li><li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="aboutDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        About Us
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+
+        <li>
+            <a class="dropdown-item" href="About Institute.html">
+                About Institute
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Our Mission.html">
+                Our Mission
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Our Vision.html">
+                Our Vision
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Aims & Objectives.html">
+                Aims & Objectives
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Director's Message.html">
+                Director's Message
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Infrastructure & Facilities.html">
+                Infrastructure & Facilities
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Recognition & Affiliation.html">
+                Recognition & Affiliation
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="Why Choose Us.html">
+                Why Choose Us
+            </a>
+        </li>
+
+    </ul>
+</li><li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="aboutDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        E- Learning
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+
+       <li class="dropend submenu-parent">
+
+    <a class="dropdown-item dropdown-toggle"
+       href="#"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        OSOU
+    </a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+            <a class="dropdown-item" href="osou-ug.html">
+                UG (Undergraduate)
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="osou-pg.html">
+                PG (Postgraduate)
+            </a>
+        </li>
+
+    </ul>
+
+</li>
+
+        <li>
+            <a class="dropdown-item" href="okcl-page.html">
+                OKCL
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="nielit-page.html">
+                NIELIT
+            </a>
+        </li>
+
+    </ul>
+</li><li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="aboutDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        Results
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+
+        <li>
+            <a class="dropdown-item" href="https://student.nielit.gov.in/">
+                NIELIT
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="https://oscit.osou.ac.in/">
+                OSOU / OKCL
+            </a>
+        </li>
+    </ul>
+</li>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" href="gallery.html">
+          Gallery
+          </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="contact.html">
+            Contact
+          </a>
+</li>
+<!-- LOGIN DROPDOWN 
+<div class="dropdown">
+<button aria-expanded="false" class="btn btn-warning btn-sm dropdown-toggle login-button" data-bs-toggle="dropdown" type="button">
+<i class="bi bi-box-arrow-in-right"></i>
+<span>Login</span>
+</button>
+<ul class="dropdown-menu dropdown-menu-end login-dropdown-menu">
+<li class="login-menu-heading">
+<h6>
+<i class="bi bi-shield-lock-fill me-1"></i>
+                  Login Portal
+                </h6>
+</li>
+<li>
+<hr class="dropdown-divider"/>
+</li>
+
+<li>
+<a class="dropdown-item" href="admin-login.html">
+<span class="role-icon">
+<i class="bi bi-speedometer2"></i>
+</span>
+<span>
+                    Admin
+                  </span>
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="administrator-login.html">
+<span class="role-icon">
+<i class="bi bi-person-badge-fill"></i>
+</span>
+<span>
+                    Administrator
+                  </span>
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="data-entry-operator-login.html">
+<span class="role-icon">
+<i class="bi bi-keyboard-fill"></i>
+</span>
+<span>
+                    Data Entry Operator
+                  </span>
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="faculty-login.html">
+<span class="role-icon">
+<i class="bi bi-person-workspace"></i>
+</span>
+<span>
+                    Faculty
+                  </span>
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="partner-login.html">
+<span class="role-icon">
+<i class="bi bi-building-check"></i>
+</span>
+<span>
+                    Partner
+                  </span>
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="student-login.html">
+<span class="role-icon">
+<i class="bi bi-mortarboard-fill"></i>
+</span>
+<span>
+                    Student
+                  </span>
+</a>
+</li>
+</ul>
+</div>
+</ul>
+</div> -->
+</div>
+</nav>
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+<span class="hero-badge">
+<i class="bi bi-stars"></i>
+        Welcome to OMGIIT
+      </span>
+<h1>
+        Learn Computer Skills <br> From Home & Get Your<br> 
+        <span class="typing-text">Technology & Education</span>
+</h1>
+<p>
+        OMM GANAPATI INSTITUTE OF INFORMATION & TECHNOLOGY
+        is dedicated to providing quality education, practical
+        training and technology-focused learning for a
+        successful future.
+      </p>
+<div class="hero-buttons">
+<a class="btn-main" href="registration.html">
+<i class="bi bi-person-plus-fill"></i>
+          Start Your Journey
+        </a>
+<a class="btn-outline" href="about-us.html">
+          Discover More
+          <i class="bi bi-arrow-right"></i>
+</a>
+</div>
+<!-- Mini Cards -->
+<div class="row g-3 hero-card-wrapper">
+<div class="col-md-4">
+<div class="hero-mini-card">
+<i class="bi bi-mortarboard-fill"></i>
+<h6>Quality Education</h6>
+<small>
+              Learn from structured and practical programs.
+            </small>
+</div>
+</div>
+<div class="col-md-4">
+<div class="hero-mini-card">
+<i class="bi bi-laptop"></i>
+<h6>Digital Learning</h6>
+<small>
+              Develop modern technology and digital skills.
+            </small>
+</div>
+</div>
+<div class="col-md-4">
+<div class="hero-mini-card">
+<i class="bi bi-briefcase-fill"></i>
+<h6>Career Focused</h6>
+<small>
+              Build skills for academic and professional growth.
+            </small>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ADMISSION REMINDER SECTION -->
+ 
+<div class="admission-reminder">
+<div class="admission-top">
+<div class="closing-status">
+<span class="green-dot"></span>Closing Soon!</div>
+<div class="admission-month" id="admissionMonth">
+            November 2026
+        </div>
+</div>
+<h2 class="admission-heading">
+<span id="monthHeading">November 2026</span>
+        Admission <span>Closing Soon!</span>
+</h2>
+<div class="admission-warning">
+<div class="warning-icon">⚠️</div>
+<div>
+<div class="warning-title" id="warningTitle">
+                Only 8 days left! Admission closing on 30 November!
+            </div>
+<div class="warning-subtitle" id="warningSubtitle">
+                Seats filling fast — Enroll before deadline!
+            </div>
+</div>
+</div>
+<div class="admission-bottom">
+<div class="countdown">
+<div class="time-box">
+<div class="time-number" id="days">08</div>
+<div class="time-label">DAYS</div>
+</div>
+<div class="time-separator">:</div>
+<div class="time-box">
+<div class="time-number" id="hours">14</div>
+<div class="time-label">HOURS</div>
+</div>
+<div class="time-separator">:</div>
+<div class="time-box">
+<div class="time-number" id="minutes">10</div>
+<div class="time-label">MINS</div>
+</div>
+<div class="time-separator">:</div>
+<div class="time-box">
+<div class="time-number" id="seconds">44</div>
+<div class="time-label">SECS</div>
+</div>
+</div>
+<a class="enroll-button" href="admission-form.html">
+            🎓 Enroll Now!
+        </a>
+</div>
+</div>
+<script>
+(function () {
+    function updateAdmissionCountdown() {
+        const now = new Date();
+        // Automatically get current month and year
+        const monthName = now.toLocaleString('en-US', {
+            month: 'long'
+        });
+
+        const year = now.getFullYear();
+
+        // Last date of current month
+        const deadline = new Date(
+            year,
+            now.getMonth() + 1,
+            0,
+            23, 59, 59
+        );
+
+        // Month and year display
+        document.getElementById('admissionMonth').textContent =
+            monthName + ' ' + year;
+
+        document.getElementById('monthHeading').textContent =
+            monthName + ' ' + year;
+
+        // Calculate remaining time
+        let remaining = Math.max(
+            0,
+            deadline.getTime() - now.getTime()
+        );
+
+        const days = Math.floor(
+            remaining / (1000 * 60 * 60 * 24)
+        );
+
+        remaining %= (1000 * 60 * 60 * 24);
+
+        const hours = Math.floor(
+            remaining / (1000 * 60 * 60)
+        );
+
+        remaining %= (1000 * 60 * 60);
+
+        const minutes = Math.floor(
+            remaining / (1000 * 60)
+        );
+
+        const seconds = Math.floor(
+            (remaining % (1000 * 60)) / 1000
+        );
+
+        // Update countdown
+        document.getElementById('days').textContent =
+            String(days).padStart(2, '0');
+
+        document.getElementById('hours').textContent =
+            String(hours).padStart(2, '0');
+
+        document.getElementById('minutes').textContent =
+            String(minutes).padStart(2, '0');
+
+        document.getElementById('seconds').textContent =
+            String(seconds).padStart(2, '0');
+
+        // Automatic warning message
+        const lastDate = deadline.getDate();
+
+        const warning = document.getElementById('warningTitle');
+        const subtitle = document.getElementById('warningSubtitle');
+
+        if (days === 0) {
+            warning.textContent =
+                'Last Day! Admission closing today, ' +
+                lastDate + ' ' + monthName + '!';
+
+            subtitle.textContent =
+                'Final opportunity — Enroll now!';
+
+        } else {
+            warning.textContent =
+                'Only ' + days + ' days left! Admission closing on ' +
+                lastDate + ' ' + monthName + '!';
+
+            subtitle.textContent =
+                'Seats filling fast — Enroll before deadline!';
+        }
+    }
+    // Update immediately and every second
+    updateAdmissionCountdown();
+    setInterval(updateAdmissionCountdown, 1000);
+})();
+</script>
+</section>
+
+<!-- Latest Notice Bar -->
+<div class="notice-bar">
+
+    <!-- Left Side Label -->
+    <div class="notice-label">
+        <span class="blink-dot"></span>
+        LATEST NOTICE
+    </div>
+
+    <!-- Scrolling Notice -->
+    <div class="notice-text">
+        <i>
+            Welcome to <b>OMGIIT - Boudh</b>!
+            Join Our Popular Courses Today.
+            <b>
+                OKCL - OS-CIT | OS-CIT 'A' | OS-CIT 'A+'
+                | NIELIT - ACC | BCC | CCC | CCC+ | ECC | 'O' Level
+            </b>
+            Contact us for More Information.
+            <img src="new.gif" alt="New">
+        </i>
+    </div>
+
+</div>
+
+<!-- NOTICE POPUP START -->
+<div class="notice-overlay" id="noticePopup">
+
+  <div class="notice-popup" id="noticeBox">
+
+    <!-- Close Button -->
+    <button class="notice-close"
+            onclick="closeNotice()"
+            aria-label="Close Notice">&times;
+    </button>
+
+    <!-- IMAGE NOTICE 
+    <div class="notice-image">
+      <img src="Notice.jpg" alt="OMGIIT Notice">
+    </div>  -->
+
+    <!-- TEXT NOTICE -->
+    <div class="notice-content">
+      <h2>📢 Important Notice</h2>
+      <p>
+        Welcome to OMM GANAPATI INSTITUTE OF INFORMATION
+        & TECHNOLOGY (OMGIIT), Boudh, Odisha.
+      </p>
+
+      <p>
+        Admission is Open for New Batch.
+        Join Our Popular Courses Today!
+      </p>
+
+      <h3>Contact: +91 6371320268</h3>
+    </div>
+  </div>
+</div>
+<script>
+
+// Close Popup
+function closeNotice() {
+  const popup = document.getElementById("noticePopup");
+
+  if (popup) {
+    popup.style.display = "none";
+  }
+}
+
+// Open Popup When Website Loads
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("noticePopup");
+
+  if (popup) {
+    popup.style.display = "flex";
+  }
+});
+
+// Click Outside Popup to Close
+document.getElementById("noticePopup").addEventListener("click", function(event) {
+  if (event.target === this) {
+    closeNotice();
+  }
+});
+
+// ESC Key to Close
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeNotice();
+  }
+});
+
+</script>
+<!-- NOTICE POPUP END -->
+
+<!-- ABOUT -->
+<section class="section">
+<div class="container">
+<div class="row align-items-center g-5">
+<div class="col-lg-6">
+<div class="about-image">
+<img alt="Institute Campus" src="img01.avif"/>
+<div class="experience-card">
+<strong>3+</strong>
+<span>
+              Years of Learning & Development
+            </span>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="about-content">
+<div class="small-title">
+            ABOUT OUR INSTITUTE
+          </div>
+<h2>
+            Developing Skills.
+            Creating Opportunities.
+          </h2>
+<p>
+              OMM GANAPATI INSTITUTE OF INFORMATION & TECHNOLOGY
+              is committed to creating a learner-focused environment
+              where students can develop knowledge, technical skills,
+              confidence and professional capabilities.
+          </p>
+<p>
+            We combine classroom learning with practical exposure
+            and modern technology to help learners become
+            future-ready professionals.
+          </p>
+<ul class="check-list">
+<li>
+<i class="bi bi-check-circle-fill"></i>
+              Quality-oriented education
+            </li>
+<li>
+<i class="bi bi-check-circle-fill"></i>
+              Practical and technology-based learning
+            </li>
+<li>
+<i class="bi bi-check-circle-fill"></i>
+              Skill development programs
+            </li>
+<li>
+<i class="bi bi-check-circle-fill"></i>
+              Career-focused learning environment
+            </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ======================================================
+     STATISTICS
+====================================================== -->
+<!-- Merged courses, government certificate information and student reviews -->
+<div class="omgiit-extra">
+<main>
+
+<!-- NIELIT COURSES: integrated into the original OMGIIT master design -->
+<section class="section nielit-courses-section" id="nielit-courses">
+<div class="container">
+<div class="section-title">
+<span class="small-title">NIELIT CERTIFIED PROGRAMMES</span>
+<h2>NIELIT Courses Details</h2>
+<p>Explore digital literacy and professional IT courses. Select a course to view its objectives, duration, eligibility and key learning areas.</p>
+</div>
+<div aria-label="NIELIT course details" class="nielit-course-panel">
+<nav aria-label="Select a NIELIT course" class="nielit-course-tabs">
+<button aria-selected="true" class="nielit-course-tab active" data-nielit-course="0" type="button"><small>Course 01</small><strong>ACC</strong><em>20 Hours</em></button>
+<button aria-selected="false" class="nielit-course-tab" data-nielit-course="1" type="button"><small>Course 02</small><strong>BCC</strong><em>36 Hours</em></button>
+<button aria-selected="false" class="nielit-course-tab" data-nielit-course="2" type="button"><small>Course 03</small><strong>CCC</strong><em>80–90 Hours*</em></button>
+<button aria-selected="false" class="nielit-course-tab" data-nielit-course="3" type="button"><small>Course 04</small><strong>CCC+</strong><em>126 Hours</em></button>
+<button aria-selected="false" class="nielit-course-tab" data-nielit-course="4" type="button"><small>Course 05</small><strong>ECC</strong><em>200 Hours</em></button>
+<button aria-selected="false" class="nielit-course-tab" data-nielit-course="5" type="button"><small>Course 06</small><strong>'O' LEVEL</strong><em>540 Hours</em></button>
+<button aria-selected="false" class="nielit-course-tab" data-nielit-course="6" type="button"><small>Course 07</small><strong>'A' LEVEL</strong><em>1590 Hours</em></button>
+</nav>
+<article aria-live="polite" class="nielit-course-content">
+<p class="nielit-course-eyebrow" id="nielit-course-eyebrow">NIELIT Digital Literacy Course</p>
+<h3 id="nielit-course-title">ACC</h3>
+<p class="nielit-course-subtitle" id="nielit-course-subtitle">Awareness in Computer Concepts</p>
+<div class="nielit-course-pills">
+<span class="nielit-course-pill" id="nielit-course-duration">20 Hours · Foundation Level</span>
+<span class="nielit-course-pill" id="nielit-course-category">Digital Literacy</span>
+</div>
+<div class="nielit-course-rule"></div>
+<p class="nielit-course-description" id="nielit-course-description">Build essential awareness of computers and their everyday uses. This introductory course covers basic computer operations, document creation, internet access, email, financial literacy, online banking awareness and e-Governance services. It is suitable for beginners who want to become more confident using digital services.</p>
+<h4 class="nielit-course-subheading">Key Learning Areas</h4>
+<div class="nielit-course-tags" id="nielit-course-tags">
+<span>Computer Fundamentals</span><span>Basic Operations</span><span>Word Processing</span><span>Internet &amp; Email</span><span>Digital &amp; Financial Literacy</span><span>e-Governance</span>
+</div>
+<div class="nielit-course-info-grid">
+<div><small>Course Duration</small><strong id="nielit-course-hours">20 Hours (9 Theory + 11 Practical)</strong></div>
+<div><small>Eligibility</small><strong id="nielit-course-eligibility">No minimum qualification</strong></div>
+<div><small>Learning Focus</small><strong id="nielit-course-focus">Computer awareness and everyday digital use</strong></div>
+<div><small>Course Type</small><strong id="nielit-course-type">NIELIT Digital Literacy Course</strong></div>
+</div>
+<div class="nielit-course-actions">
+<a class="nielit-course-enquire" href="####" id="nielit-course-link">At Center Enroll Now-></a>
+<a class="nielit-course-official" href="https://student.nielit.gov.in/" id="nielit-official-link" rel="noopener" target="_blank">Official NIELIT Website ↗</a>
+</div>
+</article>
+
+</section>
+
+<script>
+(() => {
+  "use strict";
+  const nielitCourses = [
+ {
+  title:"ACC",subtitle:"Awareness in Computer Concepts",eyebrow:"NIELIT Digital Literacy Course",
+  duration:"20 Hours · Foundation Level",category:"Digital Literacy",
+  description:"Build essential awareness of computers and their everyday uses. This introductory course covers basic computer operations, document creation, internet access, email, financial literacy, online banking awareness and e-Governance services. It is suitable for beginners who want to become more confident using digital services.",
+  tags:["Computer Fundamentals","Basic Operations","Word Processing","Internet & Email","Digital & Financial Literacy","e-Governance"],
+  hours:"20 Hours (9 Theory + 11 Practical)",eligibility:"No minimum qualification",
+  focus:"Computer awareness and everyday digital use",type:"NIELIT Digital Literacy Course",
+  link:"https://student.nielit.gov.in/"
+ },
+ {
+  title:"BCC",subtitle:"Basic Computer Course",eyebrow:"NIELIT Digital Literacy Course",
+  duration:"36 Hours · Basic Level",category:"Digital Literacy",
+  description:"Develop practical computer skills for personal, educational and professional use. Learn computer fundamentals, operating a computer through a graphical interface, word processing, spreadsheets, presentations, internet browsing, email and online collaboration. The course places strong emphasis on hands-on practice.",
+  tags:["Computer Fundamentals","GUI Operating System","Word Processing","Spreadsheets","Presentations","Internet & Email","Online Collaboration"],
+  hours:"36 Hours (10 Theory + 4 Tutorials + 22 Practical)",eligibility:"No minimum educational qualification for direct applicants",
+  focus:"Hands-on computer use and everyday office tasks",type:"NIELIT Digital Literacy Course",
+  link:"https://student.nielit.gov.in/"
+ },
+ {
+  title:"CCC",subtitle:"Course on Computer Concepts",eyebrow:"NIELIT Digital Literacy Course",
+  duration:"80–90 Hours · Basic Digital Skills",category:"Digital Literacy",
+  description:"Gain a practical foundation in computer concepts and common digital applications. The course covers computer fundamentals, graphical operating systems, word processing, spreadsheets, presentations, computer communication, internet services, web browsers and digital collaboration. It is designed to build computer literacy for everyday and workplace tasks.",
+  tags:["Computer Fundamentals","Operating Systems","Word Processing","Spreadsheets","Presentations","Internet & Web","Communication & Collaboration"],
+  hours:"80–90 Hours (check the current applicable NIELIT syllabus)",eligibility:"No minimum qualification in the current DLC eligibility guideline; confirm the applicable examination route",
+  focus:"Core computer applications and digital productivity",type:"NIELIT Digital Literacy Course",
+  link:"https://student.nielit.gov.in/"
+ },
+ {
+  title:"CCC+",subtitle:"Course on Computer Concepts Plus",eyebrow:"NIELIT Digital Literacy Course",
+  duration:"126 Hours · Advanced Digital Literacy",category:"Digital Literacy Plus",
+  description:"Strengthen computer and office-automation skills while exploring practical technology used in modern workplaces. The programme includes operating systems, word processing, spreadsheets, presentations, database management, cyber security, PC maintenance, networking, e-Governance, digital financial services and soft skills.",
+  tags:["Office Automation","Database Management","Cyber Security","PC Maintenance","Networking","e-Governance","Digital Finance","Soft Skills"],
+  hours:"126 Hours (49 Theory + 77 Practical)",eligibility:"10th Pass",
+  focus:"Office automation, IT awareness and workplace readiness",type:"NIELIT Digital Literacy Course",
+  link:"https://student.nielit.gov.in/"
+ },
+ {
+  title:"ECC",subtitle:"Expert Computer Course",eyebrow:"NIELIT Digital Literacy Course",
+  duration:"200 Hours · Professional Foundation",category:"Advanced Digital Literacy",
+  description:"Build broader computer and IT skills for professional environments. The course combines computer fundamentals, hardware, operating systems, office automation, database management, cyber security, PC maintenance and troubleshooting, networking, internet technologies, e-Governance, digital financial services, multimedia, HTML basics and communication skills.",
+  tags:["Computer Hardware","Office Automation","Database Management","Cyber Security","Networking","HTML Basics","Multimedia","Communication Skills"],
+  hours:"200 Hours (72 Theory + 128 Practical)",eligibility:"12th Pass",
+  focus:"Practical IT skills, troubleshooting and professional readiness",type:"NIELIT Digital Literacy Course",
+  link:"https://student.nielit.gov.in/"
+ },
+ {
+  title:"'O' LEVEL",subtitle:"NIELIT 'O' Level Course in Information Technology",eyebrow:"NIELIT Professional IT Qualification",
+  duration:"540 Hours · 1 Year",category:"Professional IT Qualification",
+  description:"Develop Professional Skills In Information Technology. The Course Covers IT Tools And Business Systems, Internet Technology And Web Design, Programming And Problem Solving Through Python, One Elective Module, Practical Work And A Project. It Is Intended For Learners Progressing Towards Entry-Level IT Roles And Further Professional Study.",
+  tags:["IT Tools & Business Systems","Internet Technology","Web Design","Python Programming","Elective Module","Practical Examination","Project"],
+  hours:"540 Hours · 2 Semesters",eligibility:"10+2, Relevant one-year ITI, or specified diploma route; direct-applicant rules and experience conditions may apply",
+  focus:"Professional-level IT, programming and web technologies",type:"NIELIT Professional IT Qualification",
+  link:"https://student.nielit.gov.in/"
+ },
+ {
+  title:"'A' LEVEL",subtitle:"NIELIT 'A' Level Course in Information Technology",eyebrow:"NIELIT Professional IT Qualification",
+  duration:"1590 Hours · 1.5 Years",category:"Professional IT Qualification",
+  description:"Professional Level IT Study With A Deeper Programme In Software And Information Technology. The Current NIELIT Programme Is Designed Around Job-Role-Oriented Skills And Includes Advanced Computing Subjects, Practical Learning And Project Work. The Detailed Modules Depend On The Current NIELIT Syllabus And Registration Scheme.",
+  tags:["Programming","Software Development","IT Specialisation","Practical Modules","Project Work","Professional IT Skills"],
+  hours:"1590 Hours (including 390 hours of projects)",eligibility:"O Level, Specified Recognised Diploma or Graduate Route; Relevant Experience may Apply to Institute Applicants",
+  focus:"Professional IT Knowledge, Specialisation and Project Capability",type:"NIELIT Professional IT Qualification",
+  link:"https://student.nielit.gov.in/"
+ }
+];
+  const tabs = document.querySelectorAll(".nielit-course-tab");
+  const setText = (id, value) => {
+    const element = document.getElementById(id);
+    if (element) element.textContent = value;
+  };
+  function showNielitCourse(index) {
+    const c = nielitCourses[index];
+    if (!c) return;
+    setText("nielit-course-eyebrow", c.eyebrow);
+    setText("nielit-course-title", c.title);
+    setText("nielit-course-subtitle", c.subtitle);
+    setText("nielit-course-duration", c.duration);
+    setText("nielit-course-category", c.category);
+    setText("nielit-course-description", c.description);
+    setText("nielit-course-hours", c.hours);
+    setText("nielit-course-eligibility", c.eligibility);
+    setText("nielit-course-focus", c.focus);
+    setText("nielit-course-type", c.type);
+    const tags = document.getElementById("nielit-course-tags");
+    tags.replaceChildren(...c.tags.map(label => {
+      const span = document.createElement("span");
+      span.textContent = label;
+      return span;
+    }));
+    document.getElementById("nielit-official-link").href = c.link;
+    document.getElementById("nielit-course-link").href =
+      "mailto:omgiit.edu@gmail.com?subject=" + encodeURIComponent("Admission Enquiry - " + c.title);
+    tabs.forEach((tab, i) => {
+      const active = i === index;
+      tab.classList.toggle("active", active);
+      tab.setAttribute("aria-selected", String(active));
+    });
+  }
+  tabs.forEach(tab => tab.addEventListener("click", () => showNielitCourse(Number(tab.dataset.nielitCourse))));
+})();
+</script>
+<section class="section courses-section" id="courses">
+<div class="section-heading">
+<span class="kicker">OSOU / OKCL CERTIFIED PROGRAMMES</span>
+<h2>Our Most In <span class="typing-rainbow" id="certificateTitle">Demand Courses</span></h2>
+<p>Choose the right OS-CIT course according to your learning level and certification goal.</p>
+</div>
+<div aria-label="Course details" class="course-panel">
+<nav aria-label="Select a course" class="course-tabs">
+<button aria-selected="true" class="course-tab active" data-course="0"><small>Course 01</small><strong>OS-CIT</strong><em>3 Months</em></button>
+<button aria-selected="false" class="course-tab" data-course="1"><small>Course 02</small><strong>OS-CIT 'A'</strong><em>6 Months</em></button>
+<button aria-selected="false" class="course-tab" data-course="2"><small>Course 03</small><strong>OS-CIT 'A+'</strong><em>12 Months</em></button>
+<button aria-selected="false" class="course-tab" data-course="3"><small>Course 04</small><strong>OCOC</strong><em>3 Months</em></button>
+</nav>
+<article aria-live="polite" class="course-content">
+<h3 id="course-title">OS-CIT</h3>
+<p class="course-subtitle" id="course-subtitle">Odisha State-Certificate in Information Technology</p>
+<span class="course-duration" id="course-duration">3 Months · Basic Level</span>
+<div class="rule"></div>
+<p class="course-description" id="course-description">Learn the essential foundation of computer applications, internet usage, and practical digital skills. Ideal for students, job seekers, and beginners who want to build confidence in computer education from home. Students gain hands-on knowledge of MS Office, internet browsing, email usage, and basic digital tools needed for everyday work and government job applications.</p>
+<div class="tags" id="course-tags"><span class="tag">OSOU Certified</span><span class="tag">Online Learning</span><span class="tag">Free Books</span><span class="tag">Govt. Valid</span></div>
+<a class="course-link" href="###" id="course-link">Enroll Now<span aria-hidden="true">→</span></a>
+</article>
+</div>
+</section>
+</main>
+<section class="gazette-section" id="certificates">
+<div class="gazette-inner">
+<div class="section-heading">
+<span class="gov-pill">Government Recognized Certification</span>
+<h2>Govt. Gazette &<span class="typing-rainbow" id="certificateTitle">Certificate Samples</span></h2>
+<p>Every course offered by OMGIIT with OKCL is backed by Odisha Govt. Gazette notification and certified by Odisha State Open University, Sambalpur — valid for all government & private sector jobs.</p>
+</div>
+<div aria-label="Certificate categories" class="gazette-tabs" role="tablist">
+<button aria-selected="true" class="gazette-tab active" data-tab="gazette" role="tab">Odisha Govt. Gazette</button>
+<button aria-selected="false" class="gazette-tab" data-tab="oscit" role="tab">OS-CIT Certificate</button>
+<button aria-selected="false" class="gazette-tab" data-tab="oscita" role="tab">OS-CIT 'A' Certificate</button>
+<button aria-selected="false" class="gazette-tab" data-tab="oscitap" role="tab">OS-CIT 'A+' Certificate</button>
+<button aria-selected="false" class="gazette-tab" data-tab="ococ" role="tab">OCOC Certificate</button>
+</div>
+<div class="gazette-grid">
+<div class="document-frame" id="documentFrame">
+<img alt="Odisha Government Gazette document" onerror="this.style.display='none';document.getElementById('documentPlaceholder').hidden=false;" src="Gazette.jpeg"/>
+<div class="document-placeholder" hidden="" id="documentPlaceholder"><div class="blank-icon">▤</div><p>Add your verified certificate or Gazette image here.<br/>Keep the image in the same folder as this HTML file.</p></div>
+</div>
+<div aria-live="polite" class="details">
+<div class="eyebrow" id="eyebrow">Government of Odisha · Official Notification</div>
+<h3 id="detailTitle">Odisha Gazette — OS-CIT Course Authorization</h3>
+<p id="detailText">The Government of Odisha officially notified and authorized the OS-CIT Computer Literacy Course under OKCL through this Gazette notification, making certificates legally valid across all Odisha government departments and private organizations.</p>
+<div class="info-grid" id="infoGrid">
+
+    <div class="info">
+        <div class="icon">🏛️</div>
+        <div class="info-content">
+            <small>Issued By</small>
+            <b>Government of Odisha — E & IT Department</b>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="icon">📋</div>
+        <div class="info-content">
+            <small>Authorized Body</small>
+            <b>Odisha Knowledge Corporation Limited (OKCL)</b>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="icon">📅</div>
+        <div class="info-content">
+            <small>Gazette Status</small>
+            <b>Active & Legally Enforceable — Odisha State</b>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="icon">🎓</div>
+        <div class="info-content">
+            <small>Certifying University</small>
+            <b>Odisha State Open University (OSOU), Sambalpur</b>
+        </div>
+    </div>
+
+</div>
+
+<div class="jobs-title">Govt. Jobs Where OS-CIT is Required</div>
+
+<div class="jobs">
+
+    <div class="job">
+        <b>GRS Recruitment</b>
+        Gram Rozgar Sevak
+    </div>
+
+    <div class="job">
+        <b>CGL / CHSL</b>
+        SSC Central Govt. Jobs
+    </div>
+
+    <div class="job">
+        <b>Odisha Pollution Board</b>
+        State Dept. Recruitment
+    </div>
+
+    <div class="job">
+        <b>OSSC Recruitment</b>
+        Odisha Staff Selection
+    </div>
+
+    <div class="job">
+        <b>Odisha Police</b>
+        Constable & SI Posts
+    </div>
+
+    <div class="job">
+        <b>Revenue Inspector</b>
+        RI & ARI Posts
+    </div>
+    
+
+  <div class="gazette-section">
+      <div class="gazette-tags">
+          <div class="gazette-tag">Govt. Notified</div>
+          <div class="gazette-tag">OKCL Authorized</div>
+          <div class="gazette-tag">Legally Valid</div>
+          <div class="gazette-tag">All Odisha Depts</div>
+      </div>
+
+      <a class="gazette-action"
+        href="gazett"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Gazette Notification
+      </a>
+  </div>
+
+</div>
+</div>
+</section>
+<main>
+<section class="section reviews-section" id="reviews">
+<div class="section-heading">
+<span class="kicker">Learner Experiences</span>
+<h2>What Our <span class="typing-rainbow" id="certificateTitle">Students Say</span></h2>
+<p>Reviews from students across Odisha who transformed their digital skills with OMGIIT.</p>
+</div>
+<div class="stats">
+<div class="stat"><strong>4.9</strong><div class="stars"></div><small>Average Rating</small></div>
+<div class="stat"><strong>2,500+</strong><small>Students Enrolled</small></div>
+<div class="stat"><strong>30+</strong><small>Districts Covered</small></div>
+<div class="stat"><strong>98%</strong><small>Satisfaction Rate</small></div>
+</div>
+<div aria-label="Student reviews auto-scrolling from right to left" class="review-window">
+<div class="review-track" id="reviewTrack"></div>
+</div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-5">
+<div class="footer-brand">
+<img alt="OMM Ganapati Institute Logo" class="institute0-logo" src="omgiit.png"/>
+
+          OMG <span>IIT</span>
+</div>
+<p>
+
+          OMM GANAPATI INSTITUTE OF INFORMATION & TECHNOLOGY
+          is committed to quality education, technology-based
+          learning and professional skill development.
+
+        </p>
+<!-- Social Links -->
+<div class="social-links mt-3">
+<a aria-label="Facebook" href="https://www.facebook.com/share/19giaaV6o2/" target="_blank">
+<i class="bi bi-facebook"></i>
+</a>
+<a aria-label="Instagram" href="https://www.instagram.com/omgiitedu_org?stkn=MTJremczemEzMzBxYg==" target="_blank">
+<i class="bi bi-instagram"></i>
+</a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/omgiit-boudh-744019418" target="_blank">
+<i class="bi bi-linkedin"></i>
+</a>
+<a aria-label="YouTube" href="https://youtube.com/@omgiit-edu-org?si=6D7tZumnOniC6uLH" target="_blank">
+<i class="bi bi-youtube"></i>
+</a>
+<a aria-label="Twitter / X" href="https://x.com/omgiit_boudh" target="_blank">
+<i class="bi bi-twitter-x"></i>
+</a>
+<a aria-label="WhatsApp" href="https://wa.me/+916371320268" target="_blank">
+<i class="bi bi-whatsapp"></i>
+</a>
+</div>
+</div>
+<div class="col-lg-2 col-md-4">
+<h5>
+          Quick Links
+        </h5>
+        <a href="https://www.upsc.gov.in/home/">
+          UPSE
+        </a>
+        <a href="https://www.ugc.gov.in/">
+          UGC
+        </a>
+        <a href="https://student.nielit.gov.in/">
+          NIELIT
+        </a>
+        <a href="https://bseodisha.nic.in/">
+          BSE Odisha
+        </a>
+        <a href="https://chseodisha.nic.in/">
+          CHSE Odisha
+        </a>
+        <a href="https://www.samsodisha.gov.in/">
+          SAMS Odisha
+        </a>  
+        <a href="https://www.osou.ac.in/">
+          OSOU Odisha
+        </a>
+      <a href="https://okcl.org/">
+          OKCL
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4">
+        <h5>
+          Guideline
+        </h5>
+        <a href="Onscreen PopUp.html">
+          Privacy Policy
+        </a>
+        <a href="courses.html">
+          Terms & Conditions
+        </a>
+        <a href="courses.html">
+          Academic Bank Registry
+        </a>
+        <a href="co.html">
+          Strategic Framework
+        </a>
+        <a href="professional_popup.html">
+          Evaluation Framework
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h5>
+          Contact Us
+        </h5>
+        <p>
+        <i class="bi bi-geo-alt-fill text-warning"></i>
+          Boudh, Odisha, India
+        </p>
+        <p>
+        <i class="bi bi-telephone-fill text-warning"></i>
+          +91 6371320268       
+        <p>
+        <i class="bi bi-envelope-fill text-warning"></i>
+          291260019@okcl.org
+        </p>
+        <p>
+        <i class="bi bi-envelope-fill text-warning"></i>
+          omgiit.edu@gmail.com
+        </p>
+      </p>
+    </div>
+  </div>
+  <div class="copyright">
+
+      ©
+      <span id="year"></span>
+      OMGIIT All Rights Reserved. Official Partner of OKCL | Certificates Issued by Odisha State Open University, Sambalpur <br/>
+      Developed By: Mr. Dharanidhara Rana
+    </div>
+</div>
+</footer>
+<!-- ======================================================
+     BOOTSTRAP JS
+====================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      const navbar = document.querySelector(".navbar-collapse");
+      if (navbar && navbar.classList.contains("show") && window.bootstrap) {
+        window.bootstrap.Collapse.getOrCreateInstance(navbar).hide();
+      }
+    });
+  });
+});
+</script>
+<script>
+/* Merged course tabs, certificate tabs and student review carousel */
+(() => {
+"use strict";
+const courses = [
+ {title:"OS-CIT",subtitle:"Odisha State-Certificate in Information Technology",duration:"3 Months · Basic Level",
+  description:"Learn the essential foundation of computer applications, internet usage, and practical digital skills. Ideal for students, job seekers, and beginners who want to build confidence in computer education from home. Students gain hands-on knowledge of MS Office, internet browsing, email usage, and basic digital tools needed for everyday work and government job applications.",
+  tags:["OSOU Certified","Online Learning","Free Books","Govt. Valid"]},
+ {title:"OS-CIT 'A'",subtitle:"Odisha State-Certificate in Information Technology – Advanced",duration:"6 Months · Intermediate Level",
+  description:"Build on your basic computer knowledge with more detailed learning and practical computer skills. This course is suitable for learners who want to improve their digital confidence and develop stronger skills for education, office work, and everyday computer use.",
+  tags:["OSOU Certified","Online Learning","Free Books","Govt. Valid"]},
+ {title:"OS-CIT 'A+'",subtitle:"Odisha State-Certificate in Information Technology – Professional",duration:"12 Months · Advanced Level",
+  description:"Develop advanced computer knowledge through extended learning and practical training. Designed for learners who want to strengthen their IT skills and build a broader foundation for academic, office, and professional use.",
+  tags:["OSOU Certified","Online Learning","Free Books","Govt. Valid"]},
+ {title:"OCOC",subtitle:"Odisha Certificate in Office Computing",duration:"3 Months · Certificate Course",
+  description:"Learn useful office-computing skills and become more confident using common computer applications for day-to-day tasks, document preparation, and basic office work.",
+  tags:["Certificate Course","Practical Learning","Free Books","Digital Skills"]}
+];
+const courseTabs = document.querySelectorAll(".course-tab");
+function showCourse(index){
+ const c=courses[index];
+ document.getElementById("course-title").textContent=c.title;
+ document.getElementById("course-subtitle").textContent=c.subtitle;
+ document.getElementById("course-duration").textContent=c.duration;
+ document.getElementById("course-description").textContent=c.description;
+ document.getElementById("course-tags").innerHTML=c.tags.map(t=>`<span class="tag">${t}</span>`).join("");
+ courseTabs.forEach((tab,i)=>{const active=i===index;tab.classList.toggle("active",active);tab.setAttribute("aria-selected",String(active));});
+}
+courseTabs.forEach(tab=>tab.addEventListener("click",()=>showCourse(Number(tab.dataset.course))));
+
+const gazetteContent={
+ gazette:{eyebrow:"Government of Odisha · Official Notification",title:"Odisha Gazette — OS-CIT Course Authorization",text:"The Government of Odisha officially notified and authorized the OS-CIT Computer Literacy Course under OKCL through this Gazette notification, making certificates legally valid across all Odisha government departments and private organizations.",image:"Gazette.jpeg",alt:"Odisha Government Gazette document"},
+ oscit:{eyebrow:"Course Certificate Information",title:"OS-CIT Certificate",text:"This certificate is issued by Odisha State Open University (OSOU), Sambalpur after successful completion of the 3-month OS-CIT course. It contains a unique certificate number, QR code for online verification, OSOU VC signature, and student details.",image:"OS-CIT.jpeg",alt:"OS-CIT certificate sample"},
+ oscita:{eyebrow:"Course Certificate Information",title:"OS-CIT 'A' Certificate",text:"The OS-CIT 'A' certificate is an advanced-level certificate issued by OSOU after completing the 6-month course. It includes all standard OSOU certificate elements plus higher grade recognition for advanced computer skills.",image:"OS-CIT-A.jpeg",alt:"OS-CIT A certificate sample"},
+ oscitap:{eyebrow:"Course Certificate Information",title:"OS-CIT 'A+' Certificate",text:"The OS-CIT 'A+' Diploma is the highest level certificate under the OS-CIT program. Issued by OSOU with full diploma recognition, this carries maximum credibility for government jobs, higher education and corporate career opportunities.",image:"OS-CIT-A-Plus.jpeg",alt:"OS-CIT A plus certificate sample"},
+ ococ:{eyebrow:"Course Certificate Information",title:"OCOC Certificate",text:"The OCOC certificate is issued by OSOU for skill-based career oriented courses under OKCL. Available in 40+ subjects, each certificate is course-specific and includes QR verification, student details, exam result and OSOU official signatures.",image:"OCOC.jpeg",alt:"OCOC certificate sample"}
+};
+document.querySelectorAll(".gazette-tab").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".gazette-tab").forEach(b=>{b.classList.remove("active");b.setAttribute("aria-selected","false");});
+ btn.classList.add("active");btn.setAttribute("aria-selected","true");
+ const d=gazetteContent[btn.dataset.tab];
+ document.getElementById("eyebrow").textContent=d.eyebrow;
+ document.getElementById("detailTitle").textContent=d.title;
+ document.getElementById("detailText").textContent=d.text;
+ const frame=document.getElementById("documentFrame");
+ frame.innerHTML=`<img src="${d.image}" alt="${d.alt}" onerror="this.style.display='none';this.nextElementSibling.hidden=false;"><div class="document-placeholder" hidden><div class="blank-icon">▤</div><p>Certificate image not found.<br>Add <strong>${d.image}</strong> to the same folder as this HTML file.</p></div>`;
+}));
+
+const reviews=[
+ {name:"Deepa Jena",place:"Boudh, Odisha",text:"Certificate postal re aasila gharaku bahut bhala offline apekhy online re bhala class heuchi",course:"OS-CIT 'A'",date:"Oct 2024"},
+ {name:"Bikash Das",place:"Boudh, Odisha",text:"OS-CIT 'A' course re os-cit & tally lab sabu bahut bhala thila, mkcl era live app is really good app.",course:"OCOC",date:"Sep 2024"},
+ {name:"Mamata Patra",place:"Boudh, Odisha",text:"Admission process bahut simple thila. Sabu process Whatsapp aau call re complete heigala, team bahut bhala",course:"OS-CIT",date:"Aug 2024"},
+ {name:"Tanmaya Das",place:"Boudh, Odisha",text:"I am deeply grateful for the invaluable education and support I received at Ama Computer Academy.",course:"OS-CIT 'A'",date:"Oct 2025"},
+ {name:"Nirmal Sethi",place:"Boudh, Odisha",text:"Malkangiri dist re rahi course complete heigala, thanks to all staff of ama computer.",course:"OS-CIT",date:"Sep 2025"},
+ {name:"Puja Behera",place:"Boudh, Odisha",text:"OS-CIT Course karithili boli, mu CGL re apply kari parili.",course:"OCOC",date:"Aug 2025"},
+ {name:"Hemant Biswal",place:"Boudh, Odisha",text:"Retired government employee mu. Computer basics sikhibi bhabi course kali. Bahut satisfied with the result!",course:"OS-CIT",date:"Dec 2024"},
+ {name:"Lipsa Mohanty",place:"Boudh, Odisha",text:"Exam results OSOU portal re check kali. Certificate download hela. Then hard copy came by speed post. Perfect!!",course:"OS-CIT 'A+'",date:"Nov 2024"},
+ {name:"Saroj Barik",place:"Boudh, Odisha",text:"Simple, affordable, govt-recognized learning is what every student needs. Academy delivers all three!",course:"OS-CIT",date:"Jan 2025"}
+];
+const track=document.getElementById("reviewTrack");
+function reviewCard(r){
+ const initials=r.name.split(" ").map(x=>x[0]).join("").slice(0,2).toUpperCase();
+ return `<article class="review-card"><div class="person"><div class="student-photo" aria-label="Student initials">${initials}</div><div><b>${r.name}</b><small>${r.place}</small></div></div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><div class="quote">"${r.text}"</div><div class="card-foot"><span class="course-badge">${r.course}</span><b>${r.date}</b></div></article>`;
+}
+track.innerHTML=reviews.map(reviewCard).join("")+reviews.map(reviewCard).join("");
+})();
+</script>
+
+<script>
+/* Main navigation: accessible nested dropdown support on touch screens. */
+document.addEventListener("DOMContentLoaded", function () {
+  const mainNav = document.querySelector(".omg-navbar");
+  if (!mainNav) return;
+
+  mainNav.querySelectorAll(".dropdown-submenu > a").forEach(function (trigger) {
+    trigger.setAttribute("aria-haspopup", "true");
+    trigger.setAttribute("aria-expanded", "false");
+    trigger.addEventListener("click", function (event) {
+      if (window.matchMedia("(max-width: 1199.98px)").matches) {
+        event.preventDefault();
+        const item = trigger.parentElement;
+        const opening = !item.classList.contains("open");
+        const siblings = item.parentElement.querySelectorAll(":scope > .dropdown-submenu");
+        siblings.forEach(function (sibling) {
+          sibling.classList.remove("open");
+          const siblingLink = sibling.querySelector(":scope > a");
+          if (siblingLink) siblingLink.setAttribute("aria-expanded", "false");
+        });
+        item.classList.toggle("open", opening);
+        trigger.setAttribute("aria-expanded", String(opening));
+      }
+    });
+  });
+
+  mainNav.querySelectorAll(".dropdown-menu a:not(.dropdown-submenu > a)").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (window.matchMedia("(max-width: 1199.98px)").matches) {
+        mainNav.querySelectorAll(".dropdown-submenu.open").forEach(function (item) {
+          item.classList.remove("open");
+          const trigger = item.querySelector(":scope > a");
+          if (trigger) trigger.setAttribute("aria-expanded", "false");
+        });
+        const collapse = mainNav.querySelector(".navbar-collapse.show");
+        if (collapse && window.bootstrap) {
+          window.bootstrap.Collapse.getOrCreateInstance(collapse).hide();
+        }
+      }
+    });
+  });
+});
+</script>
+
+<!-- Animation Script -->
+<script>const canvas = document.getElementById("network");
+const ctx = canvas.getContext("2d");
+
+let particles = [];
+let width, height;
+
+function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+
+    particles = [];
+
+    let count = Math.min(120,
+        Math.floor(width * height / 8500));
+
+    for (let i = 0; i < count; i++) {
+        particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.6,
+            vy: (Math.random() - 0.5) * 0.6,
+            r: Math.random() * 2.5 + 1
+        });
+    }
+}
+
+function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    particles.forEach((p, i) => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > width) p.vx *= -1;
+        if (p.y < 0 || p.y > height) p.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = "#f28a36";
+        ctx.shadowColor = "#ff9c42";
+        ctx.shadowBlur = 10;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        for (let j = i + 1; j < particles.length; j++) {
+            const q = particles[j];
+            const dx = p.x - q.x;
+            const dy = p.y - q.y;
+            const distance = Math.hypot(dx, dy);
+
+            if (distance < 145) {
+                ctx.beginPath();
+                ctx.moveTo(p.x, p.y);
+                ctx.lineTo(q.x, q.y);
+
+                ctx.strokeStyle =
+                    `rgba(235,130,40,${0.35 * (1-distance/145)})`;
+
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+            }
+        }
+    });
+
+    requestAnimationFrame(animate);
+}
+
+window.addEventListener("resize", resize);
+
+resize();
+animate();
+</script>
+<!-- Spen Text Typing Effect Script-->
+ <script>
+  const words = [
+    "Govt. Certified  Degree.", "Skills That Get You Jobs.",
+    "Your Digital Future","Quality Education","Digital Learning",
+    "Professional Courses","Bright Future",
+    
+];
+const typingElement = document.querySelector(".typing-text");
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+function typeEffect() {
+    const currentWord = words[wordIndex];
+    if (deleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+    typingElement.textContent = currentWord.substring(0, charIndex);
+    let speed = deleting ? 50 : 100;
+    if (!deleting && charIndex === currentWord.length) {
+        deleting = true;
+        speed = 1500;
+    } else if (deleting && charIndex === 0) {
+        deleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = 400;
+    }
+    setTimeout(typeEffect, speed);
+}
+typeEffect();
+ </script>
+
+<script>
+  const title = "";
+let index = 0;
+
+function typingCertificate() {
+    const element = document.getElementById("certificateTitle");
+
+    if (index < title.length) {
+        element.textContent += title.charAt(index);
+        index++;
+        setTimeout(typingCertificate, 100);
+    }
+}
+
+typingCertificate();
+</script>
+
+</body>
+</html>
